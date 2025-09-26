@@ -1,0 +1,1052 @@
+KPL/PCK
+
+P_constants (PCK) SPICE kernel file pck00011.tpc
+===========================================================================
+
+        By: Nat Bachman (NAIF)    2022 December 27
+
+
+Toolkit Compatibility Warning
+--------------------------------------------------------
+
+     This file provides Mars system rotation data usable with the
+     N0067 and newer versions of the SPICE Toolkit. Using it to compute
+     Mars, Phobos, or Deimos orientation with Toolkit versions N0066
+     or earlier may cause fatal run-time memory corruption in user
+     programs. See "Software limitations" below.
+
+     All other data are compatible with the N0066 and earlier Toolkits.
+
+     NAIF provides the PCK file pck00011_n0066.tpc for use with
+     older Toolkits. That PCK contains all the data from this file,
+     except that, in that file, one of the phase angle polynomials
+     for Phobos is truncated to first order.
+
+
+Purpose
+--------------------------------------------------------
+
+     This file makes available for use in SPICE-based application
+     software orientation and size/shape data for natural bodies. The
+     principal source of the data is a published report by the IAU
+     Working Group on Cartographic Coordinates and Rotational Elements
+     [1].
+
+     Orientation and size/shape data not provided by this file may be
+     available in mission-specific PCK files. Such PCKs may be the
+     preferred data source for mission-related applications.
+     Mission-specific PCKs can be found in PDS archives or on the NAIF
+     web site at URL:
+
+        https://naif.jpl.nasa.gov/naif/data.html
+
+
+Version Description
+--------------------------------------------------------
+
+     This file was created on December 27, 2022 by NASA's Navigation
+     and Ancillary Information Facility (NAIF) group, located at the Jet
+     Propulsion Laboratory, Pasadena, CA.
+
+     The previous version of the file was
+
+        pck00010.tpc
+
+     That file was published October 21, 2011.
+
+     This version incorporates data from sources listed under "Sources and
+     References" below. The primary sources are [1] and [2]. This file
+     contains size, shape, and orientation data for all objects covered
+     by the previous version of the file.
+
+     New objects covered by this file but not by the previous
+     version are:
+
+        Asteroid 52 Europa
+        Comet 67P/Churyumov-Gerasimenko
+        Aegaeon (Saturn LIII)
+        Comet Hartley 2
+        Asteroid Psyche
+
+     Orientation data for the following objects provided by this file differ
+     from those provided by the previous version:
+
+        Mercury
+
+        Mars
+        Deimos
+        Phobos
+
+        Neptune
+
+        Ceres
+        Steins
+        Vesta
+
+        Borrelly
+        Tempel 1
+
+     Radii for the following objects provided by this file differ
+     from those provided by the previous version:
+
+        Sun
+
+        Mercury
+
+        Anthe
+        Atlas
+        Calypso
+        Daphnis
+        Epimetheus
+        Helene
+        Janus
+        Methone
+        Pallene
+        Pan
+        Pandora
+        Prometheus
+        Telesto
+
+        Pluto
+        Charon
+
+        Itokawa
+
+
+File Organization
+--------------------------------------------------------
+
+     The contents of this file are as follows.
+
+     Introductory Information:
+
+         --   Purpose
+
+         --   Version description
+
+         --   File Organization
+
+         --   Disclaimer
+
+         --   Sources
+
+         --   Explanatory notes
+
+         --   Body numbers and names
+
+
+     PcK Data:
+
+
+        Orientation Data
+        ----------------
+
+         --   Orientation constants for the Sun, planets, and
+              Pluto. Additional items included in this section:
+
+                 - North geomagnetic centered dipole value
+                   for the year 2023
+
+         --   Orientation constants for satellites
+
+         --   Orientation constants for asteroids
+
+                 52 Europa
+                 Davida
+                 Eros
+                 Gaspra
+                 Hartley 2 (data shown in comments only)
+                 Ida
+                 Itokawa
+                 Lutetia
+                 Pallas
+                 Steins
+                 Vesta
+
+         --   Orientation constants for comets
+
+                 19P/Borrelly
+                 67P/Churyumov-Gerasimenko
+                 Hartley 2 (data shown in comments only)
+                 9P/Tempel 1
+
+
+         Orientation data provided in this file are used
+         by the SPICE Toolkit to evaluate the orientation
+         of body-fixed, body-centered reference frames
+         with respect to the ICRF frame ("J2000" in
+         SPICE documentation). These body-fixed frames
+         have names of the form
+
+            IAU_<body name>
+
+         for example
+
+            IAU_JUPITER
+
+         See the PCK Required Reading file pck.req for details.
+
+
+
+        Radii of Bodies
+        ---------------
+
+         --   Radii of Sun, planets, and Pluto
+
+         --   Radii of satellites, where available
+
+         --   Radii of asteroids
+
+                 52 Europa
+                 Ceres
+                 Davida
+                 Eros
+                 Gaspra
+                 Ida
+                 Itokawa
+                 Lutetia
+                 Mathilde
+                 Psyche
+                 Steins
+                 Toutatis
+                 Vesta
+
+         --   Radii of comets
+
+                 19P/Borrelly
+                 67P/Churyumov-Gerasimenko
+                 81P/Wild 2
+                 9P/Tempel 1
+                 Halley
+                 Hartley 2
+
+
+Disclaimer
+--------------------------------------------------------
+
+Applicability of Data
+
+     This P_constants file (PCK) may not contain the parameter values
+     that you prefer. NAIF suggests that you inspect this file visually
+     before proceeding with any critical or extended data processing.
+
+File Modifications by Users
+
+     Note that this file may be readily modified by you to change
+     values or add/delete parameters. NAIF requests that you update the
+     "by line," date, version description section, and file name
+     if you modify this file.
+
+     A user-modified file should be thoroughly tested before
+     being published or otherwise distributed.
+
+     P_constants files must conform to the standards described
+     in the two SPICE technical reference documents:
+
+        PCK Required Reading
+        Kernel Required Reading
+
+
+Known Limitations and Caveats
+
+     Accuracy
+     --------
+
+     In general, the orientation models given here are claimed by the
+     IAU Working Group Report [1] to be accurate to 0.1 degree
+     ([1], p. 9). However, NAIF notes that orientation models for
+     natural satellites and asteroids have in some cases changed
+     substantially with the availability of new observational data, so
+     users are urged to investigate the suitability for their
+     applications of the models presented here.
+
+     Earth orientation
+     -----------------
+
+     The IAU report [1] no longer provides rotational elements for the
+     Earth. Data in this file are from [3].
+
+     NAIF strongly cautions against using the earth rotation model
+     presented here, corresponding to the SPICE reference frame name
+     IAU_EARTH, for work demanding high accuracy. This model has been
+     determined by NAIF to have an error in the prime meridian location
+     of magnitude at least 150 arcseconds, with a local minimum
+     occurring during the year 1999. Regarding availability of better
+     earth orientation data for use with the SPICE system:
+
+        Earth orientation data are available from NAIF in the form of
+        binary earth PCK files. These files provide orientation data
+        for the ITRF93 (terrestrial) reference frame relative to the
+        ICRF.
+
+        NAIF employs an automated process to create these files; each
+        time JPL's Tracking Systems and Applications Section produces a
+        new earth orientation parameter (EOP) file, a new PCK is
+        produced. These PCKs cover a roughly 23 year time span starting
+        at Jan. 1, 2000. In these PCK files, the following effects are
+        accounted for in modeling the earth's rotation:
+
+           - Precession:                   1976 IAU model
+
+           - Nutation:                     1980 IAU model, plus interpolated
+                                           EOP nutation corrections
+
+           - Polar motion:                 interpolated from EOP file
+
+           - True sidereal time:
+
+                  UT1 - UT1R (if needed):  given by analytic formula
+                + TAI - UT1 (or UT1R):     interpolated from EOP file
+                + UT1 - GMST:              given by analytic formula
+                + equation of equinoxes:   given by analytic formula
+
+             where
+
+                TAI    =   International Atomic Time
+                UT1    =   Greenwich hour angle of computed mean sun - 12h
+                UT1R   =   Regularized UT1
+                GMST   =   Greenwich mean sidereal time
+
+        These kernels are available from the NAIF web site
+
+           https://naif.jpl.nasa.gov/pub/naif/generic_kernels/pck
+
+        At this time, these kernels have file names of the form
+
+           earth_000101_yymmdd_yymmdd.bpc
+
+        The first date in the file name, meaning 2000 January 1, is the
+        file's coverage begin time. The second and third dates are,
+        respectively, the file's coverage end time and the epoch of the
+        last datum.
+
+        These binary PCK files are very accurate (error < 0.1
+        microradian) for epochs preceding the epoch of the last datum.
+        For later epochs, the error rises to several microradians.
+
+        Binary PCK files giving accurate earth orientation from 1972 to
+        2007 and *low accuracy* predicted earth orientation from
+        2020 to 2099 are also available in the same location.
+
+        Characteristics and names of the binary kernels described here
+        are subject to change. See the aareadme.txt file at the URL
+        above for details.
+
+
+     Lunar orientation
+     -----------------
+
+     The IAU report [1] no longer provides rotational elements for the
+     Moon. Data in this file are from [3].
+
+     The lunar orientation formula provided by this file is a
+     trigonometric polynomial approximation yielding the orientation of
+     the lunar "Mean Earth/Polar Axis" (ME) reference frame. The
+     SPICE reference frame name corresponding to this model is
+     IAU_MOON.
+
+     A more accurate approximation can be obtained by using both the
+     latest NAIF lunar frame kernel and the latest binary lunar orientation
+     PCK file. These files provide orientation data for the both the Mean
+     Earth/Polar Axis frame, which has the SPICE name MOON_ME, and the
+     Lunar Principal Axes frame, which has the SPICE name MOON_PA.
+
+     These files are available on the NAIF web site; lunar PCKs are
+     located at the PCK URL above; lunar frame kernels are located at
+
+        https://naif.jpl.nasa.gov/pub/naif/generic_kernels/fk/satellites
+
+     The latest lunar frame kernel has a name of the form
+
+        moon_dennn_yymmdd.tf
+
+     The latest binary lunar PCK has a name of the form
+
+        moon_pa_dennn_yymmdd.bpc
+
+     See the "aareadme.txt" files in the paths shown above for details
+     on file contents and versions. We also suggest you refer to the
+     SPICE tutorial named "lunar_earth_pck-fk," which is available from
+     the NAIF web site.
+
+
+     Geomagnetic dipole
+     ------------------
+
+     The SPICE Toolkit doesn't currently contain software to model the
+     north geomagnetic centered dipole as a function of time.
+     As a convenience for users, this dipole's location at the
+     epoch 2023.0 was selected as a representative datum, and the
+     planetocentric longitude and latitude of this location have been
+     associated with the keywords
+
+        BODY399_N_GEOMAG_CTR_DIPOLE_LON
+        BODY399_N_GEOMAG_CTR_DIPOLE_LAT
+
+     Older values for the north geomagnetic centered dipole are
+     presented in comments as a discrete time series for the time range
+     1945-2000. For details concerning the geomagnetic field model from
+     which these values were derived, including a discussion of the
+     model's accuracy, see [9] and [11].
+
+
+     Prime meridian offsets
+     ----------------------
+
+     Prime meridian offset kernel variables, which have names
+     of the form
+
+        BODYnnn_LONG_AXIS
+
+     are not used by SPICE geometry software. These variables should be
+     considered deprecated; however, they will be retained for
+     backwards compatibility.
+
+     Users wishing to specify an offset reflecting the orientation of a
+     reference ellipsoid relative to a body-fixed reference frame
+     specified here should do so by creating a constant-offset frame
+     (also called a "TK" frame) specification. See the Frames Required
+     Reading frames.req for details.
+
+     The Mars prime meridian offset given by [6] is provided for
+     informational purposes only.
+
+
+     Software limitations
+     --------------------
+
+     SPICE Toolkits prior to version N0067 cannot make use of
+     the Mars system orientation data provided in this file. These
+     older Toolkits are unable to detect and signal a SPICE error if
+     they are used to compute orientation of Mars, Phobos, or Deimos
+     using these data: memory corruption will occur in user applications
+     linked these Toolkits if the applications attempt such computations.
+     Any results, including those of unrelated computations, may be invalid
+     after such memory corruption occurs.
+
+
+Sources and References
+--------------------------------------------------------
+
+     Sources and background references for the constants listed in this
+     file are:
+
+
+        [1]  Archinal, B.A., Acton, C.H., A'Hearn, M.F., Conrad, A.,
+             Consolmagno, G.J., Duxbury, T., Hestroffer, D., Hilton,
+             J.L., Kirk, R.L., Klinoner, S.A., McCarthy, D.,
+             Meech, K., Oberst, J., Ping., J., Seidelmann, P.K., Tholen,
+             D.J., Thomas, P.C., and Williams, I.P., "Report of the IAU
+             Working Group on Cartographic Coordinates and Rotational
+             Elements: 2015," Celestial Mechanics and Dynamical Astronomy
+             130, Article number 22 (2018).
+             DOI: https://doi.org/10.1007/s10569-017-9805-5
+
+        [2]  Archinal, B.A., Acton, C.H., Conrad, A., Duxbury, T.,
+             Hestroffer, D., Hilton, J.L., Jorda, L., Kirk, R.L.,
+             Klinoner, Margot, J.-L., S.A., Meech, K., Oberst,
+             Paganelli, F., J., Ping., J., Seidelmann, P.K., Stark, A.,
+             Tholen, Wang, Y., and Williams, I.P., "Correction to:
+             Report of the IAU Working Group on Cartographic Coordinates
+             and Rotational Elements: 2015."
+
+        [3]  Archinal, B.A., A'Hearn, M.F., Bowell, E., Conrad, A.,
+             Consolmagno, G.J., Courtin, R., Fukushima, T.,
+             Hestroffer, D., Hilton, J.L., Krasinsky, G.A.,
+             Neumann, G., Oberst, J., Seidelmann, P.K., Stooke, P.,
+             Tholen, D.J., Thomas, P.C., and Williams, I.P.
+             "Report of the IAU Working Group on Cartographic Coordinates
+             and Rotational Elements: 2009."
+
+        [4]  Archinal, B.A., A'Hearn, M.F., Conrad, A.,
+             Consolmagno, G.J., Courtin, R., Fukushima, T.,
+             Hestroffer, D., Hilton, J.L., Krasinsky, G.A.,
+             Neumann, G., Oberst, J., Seidelmann, P.K., Stooke, P.,
+             Tholen, D.J., Thomas, P.C., and Williams, I.P.
+             "Erratum to: Reports of the IAU Working Group on
+             Cartographic Coordinates and Rotational Elements: 2006 &
+             2009."
+
+        [5]  Seidelmann, P.K., Archinal, B.A., A'Hearn, M.F.,
+             Conrad, A., Consolmagno, G.J., Hestroffer, D.,
+             Hilton, J.L., Krasinsky, G.A., Neumann, G.,
+             Oberst, J., Stooke, P., Tedesco, E.F., Tholen, D.J.,
+             and Thomas, P.C. "Report of the IAU/IAG Working Group
+             on Cartographic Coordinates and Rotational Elements: 2006."
+
+        [6]  Duxbury, Thomas C. (2001). "IAU/IAG 2000 Mars Cartographic
+             Conventions,"  presentation to the Mars Express Data
+             Archive Working Group, Dec. 14, 2001.
+
+        [7]  Russell, C.T. and Luhmann, J.G. (1990). "Earth: Magnetic
+             Field and Magnetosphere." <http://www-ssc.igpp.ucla.
+             edu/personnel/russell/papers/earth_mag>. Originally
+             published in "Encyclopedia of Planetary Sciences," J.H.
+             Shirley and R.W. Fainbridge, eds. Chapman and Hall,
+             New York, pp 208-211.
+
+        [8]  Russell, C.T. (1971). "Geophysical Coordinate
+             Transformations," Cosmic Electrodynamics 2  184-186.
+             NAIF document 181.0.
+
+        [9]  ESA/ESTEC Space Environment Information System (SPENVIS)
+             (2003). Web page: "Dipole approximations of the
+             geomagnetic field."  <https://www.spenvis.oma.be/help/
+             background/magfield/cd.html>.
+
+        [10] Davies, M.E., Abalakin, V.K., Bursa, M., Hunt, G.E.,
+             and Lieske, J.H. (1989). "Report of the IAU/IAG/COSPAR
+             Working Group on Cartographic Coordinates and Rotational
+             Elements of the Planets and Satellites: 1988," Celestial
+             Mechanics and Dynamical Astronomy, v.46, no.2, pp.
+             187-204.
+
+        [11] International Association of Geomagnetism and Aeronomy
+             Web page: "International Geomagnetic Reference Field."
+             Discussion URL:
+
+                http://www.ngdc.noaa.gov/IAGA/vmod/igrf.html
+
+             Coefficients URL:
+
+                https://www.ngdc.noaa.gov/IAGA/vmod/coeffs/igrf13coeffs.txt
+
+        [12] Email communication from Dr. Brent Archinal (IAU WGCCRE Chair,
+             USGS): "Re: Shape of comet Hartley 2." Dated December 22, 2022.
+
+        [13] Seidelmann, P.K., Archinal, B.A., A'Hearn, M.F.,
+             Cruikshank, D.P., Hilton, J.L., Keller, H.U., Oberst, J.,
+             Simon, J.L., Stooke, P., Tholen, D.J., and Thomas, P.C.
+             "Report of the IAU/IAG Working Group on Cartographic
+             Coordinates and Rotational Elements of the Planets and
+             Satellites: 2003," Unpublished.
+
+
+     Most values are from [1]. All exceptions are
+     commented where they occur in this file. The exceptions are:
+
+          --  Phobos prime meridian constants are from [2].
+
+          --  Lunar orientation data are from [3].
+
+          --  Earth orientation data are from [3].
+
+          --  North geomagnetic centered dipole values were
+              computed by Nat Bachman from the 13th generation IGRF.
+              The data source was [11].
+
+     "Old values" listed are from the SPICE PCK file pck00010.tpc
+     dated October 21, 2011. Most of these values came from the 2009
+     IAU report [3].
+
+
+
+Explanatory Notes
+--------------------------------------------------------
+
+     This file, which is logically part of the SPICE P-kernel, contains
+     constants used to model the orientation, size and shape of the
+     Sun, planets, natural satellites, and selected comets and
+     asteroids. The orientation models express the direction of the
+     pole and location of the prime meridian of a body as a function of
+     time. The size/shape models ("shape models" for short) represent
+     all bodies as ellipsoids, using two equatorial radii and a polar
+     radius. Spheroids and spheres are obtained when two or all three
+     radii are equal.
+
+     The SPICE Toolkit routines that use this file are documented in
+     the SPICE "Required Reading" file pck.req. They are also
+     documented in the "PCK" SPICE tutorial, which is available on
+     the NAIF web site.
+
+File Format
+
+     A terse description of the PCK file format is given here. See the
+     SPICE "Required Reading" files pck.req and kernel.req for a
+     detailed explanation of the SPICE text kernel file format. The
+     files pck.req and kernel.req are included in the documentation
+     provided with the SPICE Toolkit.
+
+     The file starts out with the ``ID word'' string
+
+        KPL/PCK
+
+     This string identifies the file as a text kernel containing PCK
+     data.
+
+     This file consists of a series of comment blocks and data blocks.
+     Comment blocks, which contain free-form descriptive or explanatory
+     text, are preceded by a \begintext token. Data blocks follow a
+     \begindata token. In order to be recognized, each of these tokens
+     must be placed on a line by itself.
+
+     The portion of the file preceding the first data block is treated
+     as a comment block; it doesn't require an initial \begintext
+     token.
+
+     This file identifies data using a series of
+
+        KEYWORD = VALUE
+
+     assignments. The left hand side of each assignment is a
+     "kernel variable" name; the right hand side is an associated value
+     or list of values. SPICE kernel pool access routines (see kernel.req)
+     enable other SPICE routines and user applications to retrieve the
+     set of values associated with each kernel variable name.
+
+     Kernel variable names are case-sensitive and are limited to
+     32 characters in length.
+
+     Numeric values may be integer or floating point. String values
+     are normally limited to 80 characters in length; however, SPICE
+     provides a mechanism for identifying longer, "continued" strings.
+     See the SPICE routine STPOOL for details.
+
+     String values are single quoted.
+
+     When the right hand side of an assignment is a list of values,
+     the list items may be separated by commas or simply by blanks.
+     The list must be bracketed by parentheses. Example:
+
+        BODY399_RADII     = ( 6378.1366   6378.1366   6356.7519 )
+
+     Any blanks preceding or following keyword names, values and equal
+     signs are ignored.
+
+     Assignments may be spread over multiple lines, for example:
+
+        BODY399_RADII     = ( 6378.1366
+                              6378.1366
+                              6356.7519 )
+
+     This file may contain blank lines anywhere. Non-printing
+     characters including TAB should not be present in the file: the
+     presence of such characters may cause formatting errors when the
+     file is viewed.
+
+Time systems and reference frames
+
+     The 2015 IAU Working Group Report [1] states the time scale used
+     as the independent variable for the rotation formulas is
+     Barycentric Dynamical Time (TDB) and that the epoch of variable
+     quantities is J2000 TDB (2000 Jan 1 12:00:00 TDB, Julian ephemeris
+     date 2451545.0 TDB). Throughout SPICE documentation and in this
+     file, we use the names "J2000 TDB" and "J2000" for this epoch. The
+     name "J2000.0" is equivalent.
+
+     SPICE documentation refers to the time system used in this file
+     as either "ET" or "TDB." SPICE software makes no distinction
+     between TDB and the time system associated with the independent
+     variable of the JPL planetary ephemerides T_eph.
+
+     The inertial reference frame used for the rotational elements in
+     this file is identified by [1] as the ICRF (International
+     Celestial Reference Frame).
+
+     The SPICE PCK software that reads this file uses the label "J2000"
+     to refer to the ICRF; this is actually a mislabeling which has
+     been retained in the interest of backward compatibility. Using
+     data from this file, by means of calls to the SPICE frame
+     transformation routines, will actually compute orientation
+     relative to the ICRF.
+
+     The difference between the J2000 frame and the ICRF is
+     on the order of 100 milliarcseconds and is well below the
+     accuracy level of the formulas in this file.
+
+Orientation models
+
+     All of the complete orientation models use three Euler angles to
+     describe the orientation of the coordinate axes of the "Body Equator
+     and Prime Meridian" system with respect to an inertial system. By
+     default, the inertial system is the ICRF (labeled as "J2000"), but
+     other inertial frames can be specified in the file. See the PCK
+     Required Reading for details.
+
+     The first two angles, in order, are the ICRF right ascension and
+     declination (henceforth RA and DEC) of the north pole of a body as
+     a function of time. The third angle is the prime meridian location
+     (represented by "W"), which is expressed as a rotation about the
+     north pole, and is also a function of time.
+
+     For each body, the expressions for the north pole's right
+     ascension and declination, as well as prime meridian location, are
+     sums (as far as the models that appear in this file are concerned)
+     of quadratic polynomials and trigonometric polynomials, where the
+     independent variable is time.
+
+     In this file, the time arguments in expressions always refer to
+     Barycentric Dynamical Time (TDB), measured in centuries or days
+     past a reference epoch. By default, the reference epoch is the
+     J2000 epoch, which is Julian ephemeris date 2451545.0 (2000 Jan 1
+     12:00:00 TDB), but other epochs can be specified in the file. See
+     the PCK Required Reading for details.
+
+     Orientation models for satellites and some planets (including
+     Jupiter) involve both polynomial terms and trigonometric terms.
+     The arguments of the trigonometric terms are linear or quadratic
+     polynomials. In this file, we call the arguments of these
+     trigonometric terms "nutation precession angles" or "phase angles."
+
+     Example: 2015 IAU Model for orientation of Jupiter. Note that
+     these values are used as an example only; see the data area below
+     for current values.
+
+        Right ascension
+        ---------------
+
+        alpha   =  268.056595 - 0.006499 T        +  0.000117 sin(Ja)
+             0                + 0.000938 sin(Jb)  +  0.001432 sin(Jc)
+                              + 0.000030 sin(Jd)  +  0.002150 sin(Je)
+
+        Declination
+        -----------
+
+        delta   =   64.495303 + 0.002413 T        +  0.000050 cos(Ja)
+             0                + 0.000404 cos(Jb)  +  0.000617 cos(Jc)
+                              - 0.000013 cos(Jd)  +  0.000926 cos(Je)
+
+        Prime meridian
+        --------------
+
+        W       =  284.95  + 870.5366420 d
+
+
+     Here
+
+        T represents centuries past J2000 ( TDB ),
+
+        d represents days past J2000 ( TDB ).
+
+        Ja-Je are nutation precession angles.
+
+     In this file, the polynomials' coefficients above are assigned
+     to kernel variable names (left-hand-side symbols) as follows
+
+        BODY599_POLE_RA        = (   268.056595     -0.006499       0. )
+        BODY599_POLE_DEC       = (    64.495303      0.002413       0. )
+        BODY599_PM             = (   284.95        870.5360000      0. )
+
+     and the trigonometric polynomials' coefficients are assigned
+     as follows
+
+        BODY599_NUT_PREC_RA  = ( 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.  0.000117
+                                                                0.000938
+                                                                0.001432
+                                                                0.000030
+                                                                0.002150 )
+
+        BODY599_NUT_PREC_DEC = ( 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.  0.000050
+                                                                0.000404
+                                                                0.000617
+                                                               -0.000013
+                                                                0.000926 )
+
+        BODY599_NUT_PREC_PM  = ( 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.  0.0
+                                                                0.0
+                                                                0.0
+                                                                0.0
+                                                                0.0  )
+
+     Note the number "599"; this is the NAIF ID code for Jupiter.
+
+     In this file, the polynomial expressions for the nutation
+     precession angles are listed along with the planet's RA, DEC, and
+     prime meridian terms. Below are the 2006 IAU nutation precession
+     angles for the Jupiter system.
+
+        J1  =   73.32      +  91472.9 T
+        J2  =   24.62      +  45137.2 T
+        J3  =  283.90      +   4850.7 T
+        J4  =  355.80      +   1191.3 T
+        J5  =  119.90      +    262.1 T
+        J6  =  229.80      +     64.3 T
+        J7  =  352.25      +   2382.6 T
+        J8  =  113.35      +   6070.0 T
+
+        J9  =  146.64      + 182945.8 T
+        J10 =   49.24      +  90274.4 T
+
+        Ja  =   99.360714  +   4850.4046 T
+        Jb  =  175.895369  +   1191.9605 T
+        Jc  =  300.323162  +    262.5475 T
+        Jd  =  114.012305  +   6070.2476 T
+        Je  =   49.511251  +     64.3000 T
+
+     Here
+
+        T represents centuries past J2000 ( TDB )
+
+        J1-J10 and Ja-Je are the nutation precession angles. The angles
+        J9 and J10 are equal to 2*J1 and 2*J2, respectively.
+
+        Angles J9 and J10 are not present in [1]; they have been added
+        to fit the terms 2*J1 and 2*J2, which appear in the orientation
+        models of several satellites, into a form that can be accepted
+        by the PCK system.
+
+     The assignment of the nutation precession angles for the
+     Jupiter system is as follows:
+
+        BODY5_NUT_PREC_ANGLES  = (    73.32      91472.9
+                                      24.62      45137.2
+                                     283.90       4850.7
+                                     355.80       1191.3
+                                     119.90        262.1
+                                     229.80         64.3
+                                     352.25       2382.6
+                                     113.35       6070.0
+                                     146.64     182945.8
+                                      49.24      90274.4
+                                      99.360714   4850.4046
+                                     175.895369   1191.9605
+                                     300.323162    262.5475
+                                     114.012305   6070.2476
+                                      49.511251     64.3000  )
+
+     You'll see an additional symbol grouped with the ones listed
+     above; it is
+
+        BODY599_LONG_AXIS
+
+     This is a deprecated feature; see the note on "Prime meridian
+     offsets" under "Known Limitations and Caveats" above.
+
+     The pattern of the formulas for satellite orientation is similar
+     to that for Jupiter. Example: 2006 IAU values for Io. Again, these
+     values are used as an example only; see the data area below for
+     current values.
+
+        Right ascension
+        ---------------
+
+        alpha  = 268.05  -  0.009 T  + 0.094 sin(J3)  +  0.024 sin(J4)
+             0
+
+        Declination
+        -----------
+
+        delta  =  64.50  +  0.003 T  + 0.040 cos(J3)  +  0.011 cos(J4)
+             0
+
+        Prime meridian
+        --------------
+
+        W      = 200.39  +  203.4889538 d  -  0.085 sin(J3)  -  0.022 sin(J4)
+
+
+        d represents days past J2000.
+
+        J3 and J4 are nutation precession angles.
+
+     The polynomial terms are assigned to symbols by the statements
+
+        BODY501_POLE_RA       = (  268.05          -0.009      0. )
+        BODY501_POLE_DEC      = (   64.50           0.003      0. )
+        BODY501_PM            = (  200.39         203.4889538  0. )
+
+     The coefficients of the trigonometric terms are assigned to symbols by
+     the statements
+
+        BODY501_NUT_PREC_RA   = (    0.   0.     0.094    0.024   )
+        BODY501_NUT_PREC_DEC  = (    0.   0.     0.040    0.011   )
+        BODY501_NUT_PREC_PM   = (    0.   0.    -0.085   -0.022   )
+
+     501 is the NAIF ID code for Io.
+
+     SPICE software expects the models for satellite orientation to
+     follow the form of the model shown here: the polynomial portions of the
+     RA, DEC, and W expressions are expected to be quadratic, the
+     trigonometric terms for RA and W (satellite prime meridian) are expected
+     to be linear combinations of sines of nutation precession angles, the
+     trigonometric terms for DEC are expected to be linear combinations of
+     cosines of nutation precession angles, and the polynomials for the
+     nutation precession angles themselves are expected to be linear or
+     quadratic.
+
+     Eventually, the software will handle more complex expressions, we
+     expect.
+
+
+Shape models
+
+     There is only one kind of shape model supported by the SPICE
+     Toolkit software at present: the triaxial ellipsoid. The 2015 IAU
+     report [1] does not use any other models, except in the case of
+     Mars, where separate values are given for the north and south
+     polar radii. In this file, we provide as a datum the mean Mars
+     polar radius provided by [1]. The North and South values are
+     included as comments.
+
+     For each body, three radii are listed: The first number is
+     the largest equatorial radius, the second number is the smaller
+     equatorial radius, and the third is the polar radius.
+
+     Example: Radii of the Earth.
+
+        BODY399_RADII     = ( 6378.1366   6378.1366   6356.7519 )
+
+
+
+Body Numbers and Names
+--------------------------------------------------------
+
+
+     The following NAIF body ID codes and body names appear in this
+     file. See the NAIF IDs Required Reading file naif_ids.req for
+     a detailed discussion and a complete list of ID codes and names.
+
+
+        1  Mercury barycenter
+        2  Venus barycenter
+        3  Earth barycenter
+        4  Mars barycenter
+        5  Jupiter barycenter
+        6  Saturn barycenter
+        7  Uranus barycenter
+        8  Neptune barycenter
+        9  Pluto barycenter
+        10 Sun
+
+
+        199 Mercury
+
+
+        299 Venus
+
+
+        399 Earth
+
+        301 Moon
+
+
+        499 Mars
+
+        401 Phobos      402 Deimos
+
+
+        599 Jupiter
+
+        501 Io          502 Europa      503 Ganymede    504 Callisto
+        505 Amalthea    506 Himalia     507 Elara       508 Pasiphae
+        509 Sinope      510 Lysithea    511 Carme       512 Ananke
+        513 Leda        514 Thebe       515 Adrastea    516 Metis
+
+
+        699 Saturn
+
+        601 Mimas       602 Enceladus   603 Tethys      604 Dione
+        605 Rhea        606 Titan       607 Hyperion    608 Iapetus
+        609 Phoebe      610 Janus       611 Epimetheus  612 Helene
+        613 Telesto     614 Calypso     615 Atlas       616 Prometheus
+        617 Pandora     618 Pan         632 Methone     633 Pallene
+        634 Polydeuces  635 Daphnis     649 Anthe       653 Aegaeon
+
+
+        799 Uranus
+
+        701 Ariel       702 Umbriel     703 Titania     704 Oberon
+        705 Miranda     706 Cordelia    707 Ophelia     708 Bianca
+        709 Cressida    710 Desdemona   711 Juliet      712 Portia
+        713 Rosalind    714 Belinda     715 Puck
+
+
+        899 Neptune
+
+        801 Triton      802 Nereid      803 Naiad       804 Thalassa
+        805 Despina     806 Galatea     807 Larissa     808 Proteus
+
+
+        999 Pluto
+
+        901 Charon
+
+
+        1000005 Comet 19P/Borrelly
+        1000012 Comet 67P/Churyumov-Gerasimenko
+        1000036 Comet Halley
+        1000041 Comet Hartley 2
+        1000093 Comet 9P/Tempel 1
+        1000107 Comet 81P/Wild 2
+
+        2000001 Asteroid Ceres
+        2000002 Asteroid Pallas
+        2000016 Asteroid Psyche
+        2000004 Asteroid Vesta
+        2000021 Asteroid Lutetia
+        2000052 Asteroid 52 Europa
+        2000216 Asteroid Kleopatra
+        2000253 Asteroid Mathilde
+        2000433 Asteroid Eros
+        2000511 Asteroid Davida
+        2002867 Asteroid Steins
+        2004179 Asteroid Toutatis
+        2025143 Asteroid Itokawa
+        2431010 Asteroid Ida
+        9511010 Asteroid Gaspra
+
+
+Orientation Constants for the Sun and Planets
+--------------------------------------------------------
+
+
+Sun
+
+     Old values:
+
+        Values are unchanged in the 2015 IAU report.
+
+     Current values:
+
+        \begindata
+
+        BODY10_POLE_RA         = (  286.13       0.          0. )
+        BODY10_POLE_DEC        = (   63.87       0.          0. )
+        BODY10_PM              = (   84.176     14.18440     0. )
+        BODY10_LONG_AXIS       = (    0.                        )
+
+\begintext
+
+Mercury
+
+     Old values:
+
+        Values are from the 2009 IAU report.
+
+
+        body199_pole_ra          = (  281.0097   -0.0328     0. )
+        body199_pole_dec         = (   61.4143   -0.0049     0. )
+        body199_pm               = (  329.5469    6.1385025  0. )
+
+        body199_long_axis        = (    0.                        )
+
+        body199_nut_prec_ra  = ( 0. 0. 0. 0. 0. )
+
+        body199_nut_prec_dec = ( 0. 0. 0. 0. 0. )
+
+        body199_nut_prec_pm  = (    0.00993822
+                                   -0.00104581
+                                   -0.00010280
+                                   -0.00002364
+                                   -0.00000532  )
+
+
+     Current values:
+
+\begindata
+
+        BODY199_POLE_RA          = (  281.0103   -0.0328     0. )
+        BODY199_POLE_DEC         = (   61.4155   -0.0049     0. )
+        BODY199_PM               = (  329.5988    6.1385108  0. )
+
+        BODY199_LONG_AXIS        = (    0.                        )
+
+        BODY199_NUT_PREC_RA  = ( 0. 0. 0. 0. 0. )
+
+        BODY199_NUT_PREC_DEC = ( 0. 0. 0. 0. 0. )
+
+        BODY199_NUT_PREC_PM  = (    0.01067257
+                                   -0.00112309
+                                   -0.00011040
+                                   -0.00002539
+                                   -0.00000571  )

@@ -1,0 +1,13 @@
+\begindata
+
+  KERNELS_TO_LOAD = (
+  './data/kernels/de432_red.bsp',
+  './data/kernels/mar097_red.bsp',
+  './data/kernels/2000SG344_3054374.15',
+  './data/kernels/HaloLUMIO_red.bsp',
+  './data/kernels/pck00011_red.tpc',
+  './data/kernels/gm_de431.tpc'
+)          
+
+\begintext
+Meta-kernel for testing FERT against SPICE. It should load the same files as metaKernel.yml

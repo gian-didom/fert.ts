@@ -1,0 +1,25 @@
+add_shared_library(LIB_NAME fert
+    LINK_LIBRARIES
+        ${YAMLCPP_LIBRARY}
+    INCLUDE_DIRS
+        ${YAMLCPP_INCLUDE_DIR}
+    LIB_PUBLIC_HEADERS
+	fert.hpp
+	math.hpp
+	MemoryMap.hpp
+    spk.hpp
+	spk2.hpp
+	spk3.hpp
+	spk9.hpp
+	spk21.hpp
+	spiceIDs.hpp
+    LIB_SOURCES
+	fert.cpp
+	math.cpp
+	MemoryMap.cpp
+	spk.cpp
+	spk2.cpp
+	spk3.cpp
+	spk9.cpp
+	spk21.cpp
+)

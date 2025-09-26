@@ -1,0 +1,6 @@
+# Ignore dev generated folders
+_build*
+.vscode
+
+# Ignore the default docs folder
+docs
