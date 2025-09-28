@@ -1,6 +1,11 @@
 # Ignore dev generated folders
 _build*
+build*
+build/
+build/** 
 .vscode
 
 # Ignore the default docs folder
 docs
+
+# CMake generated files

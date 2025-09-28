@@ -1,0 +1,40 @@
+{
+  "name": "fert-node",
+  "version": "0.9.9",
+  "description": "Fast Ephemeris Retrieval Tool (FERT) - Node.js bindings",
+  "main": "index.js",
+  "scripts": {
+    "build": "cmake-js build --arch=x64",
+    "rebuild": "cmake-js rebuild --arch=x64",
+    "test": "node example.js",
+    "clean": "cmake-js clean"
+  },
+  "keywords": [
+    "ephemeris",
+    "spice",
+    "astronomy",
+    "orbital-mechanics",
+    "native-addon"
+  ],
+  "author": "DART Lab - Politecnico di Milano",
+  "license": "MIT",
+  "dependencies": {
+    "cmake-js": "^7.3.0"
+  },
+  "devDependencies": {
+    "bindings": "^1.5.0"
+  },
+  "cmake-js": {
+    "arch": "x64",
+    "cMakeOptions": [
+      "-DCMAKE_OSX_ARCHITECTURES=x86_64",
+      "-DCMAKE_PREFIX_PATH=/usr/local",
+      "-DCMAKE_CXX_FLAGS=-march=x86-64-v3"
+    ]
+  },
+  "files": [
+    "index.js",
+    "src/",
+    "CMakeLists.txt"
+  ]
+}

@@ -287,6 +287,14 @@ public:
     SIMD_FORCE_INLINE __m256d native() const noexcept {
         return data;
     }
+
+    /**
+     * @brief Implicit conversion to __m256d (AVX2 only)
+     * Enables seamless integration with existing code using __m256d directly
+     */
+    SIMD_FORCE_INLINE operator __m256d() const noexcept {
+        return data;
+    }
 #endif
 
     /**

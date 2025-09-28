@@ -1,0 +1,6 @@
+[submodule "extrenal/cmake-js"]
+	path = extrenal/cmake-js
+	url = git@github.com:cmake-js/cmake-js.git
+[submodule "tests/external/cspice"]
+	path = tests/external/cspice
+	url = https://github.com/gian-didom/cspice.git
