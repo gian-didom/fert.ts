@@ -1,6 +1,5 @@
 # Ignore dev generated folders
 _build*
-build*
 build/
 build/** 
 .vscode
