@@ -19,7 +19,32 @@ endif()
 # set(CMAKE_PREFIX_PATH "/usr/local")
 # set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -march=x86-64-v3")
 
-# Find cmake-js include and source files
+# Get Node.js include directory from local installation
+execute_process(
+    COMMAND node -p "require('path').dirname(process.execPath)"
+    OUTPUT_VARIABLE NODE_BIN_DIR
+    OUTPUT_STRIP_TRAILING_WHITESPACE
+)
+get_filename_component(NODE_ROOT_DIR ${NODE_BIN_DIR} DIRECTORY)
+
+# Try to find node.h in common locations
+if(EXISTS "${NODE_ROOT_DIR}/include/node/node.h")
+    set(NODE_INCLUDE_DIR "${NODE_ROOT_DIR}/include/node")
+elseif(EXISTS "/usr/include/node/node.h")
+    set(NODE_INCLUDE_DIR "/usr/include/node")
+elseif(EXISTS "/usr/local/include/node/node.h")
+    set(NODE_INCLUDE_DIR "/usr/local/include/node")
+else()
+    message(FATAL_ERROR "Could not find Node.js headers. Please ensure Node.js is properly installed.")
+endif()
+
+message(STATUS "Using Node.js from: ${NODE_ROOT_DIR}")
+message(STATUS "Node.js include directory: ${NODE_INCLUDE_DIR}")
+
+# Include Node.js headers
+include_directories(${NODE_INCLUDE_DIR})
+
+# Find cmake-js include and source files (if provided, but not required)
 if(DEFINED CMAKE_JS_INC)
     include_directories(${CMAKE_JS_INC})
 endif()

@@ -4,8 +4,8 @@
   "description": "Fast Ephemeris Retrieval Tool (FERT) - Node.js bindings",
   "main": "index.js",
   "scripts": {
-    "build": "cmake-js build",
-    "rebuild": "cmake-js rebuild", 
+    "build": "cmake-js build --CDNAPI_VERSION=8",
+    "rebuild": "cmake-js rebuild --CDNAPI_VERSION=8", 
     "test": "node example.js",
     "clean": "cmake-js clean",
     "prebuild": "node scripts/prebuild.js",
