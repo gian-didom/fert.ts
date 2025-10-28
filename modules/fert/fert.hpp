@@ -9,10 +9,11 @@
 #include <tuple>
 #include <vector>
 #include <memory>
+#include <sstream>
+
 // Internal libraries
 #include "spk.hpp"
 #include "SIMD.hpp"
-
 /// @brief The Fast Ephemeris Retrieval Tool interface
 namespace fert
 {
@@ -34,7 +35,9 @@ struct fert::spkSummary
     int targetID, ///< Target SPICE ID
         centerID, ///< Center SPICE ID
         rfID,     ///< Reference frame SPICE ID
-        type;     ///< SPK type
+        type;     ///< SPK 
+    bool
+        fake;
 
     /**
      * @brief Construct a new Summary object
@@ -64,7 +67,31 @@ struct fert::spkSummary
      * @return true If the requested ephemeris in \a other is contained in the Summary object
      * @return false If the requested ephemeris in \a other is \b not contained in the Summary object
      */
-    bool operator==(const spkSummary &other) const { return (targetID == other.targetID && centerID == other.centerID && rfID == other.rfID && (t >= other.t && t <= other.tf)); }
+    bool operator==(const spkSummary &other) const { 
+        // std::cout << "Comparing this " << *this << " to other: " << other << std::endl;
+        // std::cout << "Target check: "   << (targetID == other.targetID ? "true" :"false") << std::endl;
+        // std::cout << "rfID check: "     << (rfID == other.rfID ? "true" : "false") << std::endl;
+        // std::cout << "centerID check: "   << (centerID == other.centerID ? "true" :"false") << std::endl;
+        // std::cout << "t check: "   << (t >= other.t ? "true" :"false") << std::endl;
+        // std::cout << "tf check: "   << (t <= other.tf ? "true" :"false") << std::endl;
+
+        const spkSummary& lhs =  (this->fake) ? *this : other;
+        const spkSummary& rhs = (this->fake) ? other : *this;
+        return (lhs.targetID == rhs.targetID && lhs.centerID == rhs.centerID && lhs.rfID == rhs.rfID && (lhs.t >= rhs.t && lhs.t <= rhs.tf)); }
+
+    /**
+     * @brief Printing function used for debugging with std::cout. It prints a summary of the 
+     * summary data.
+     */
+    friend std::ostream &operator<<(std::ostream &os, const spkSummary& summary) {
+        os << "t: " << summary.t << std::endl \
+        << "tf : " << summary.tf << std::endl \
+        << "targetID : " << summary.targetID << std::endl \
+        << "centerID : " << summary.centerID << std::endl \
+        << "rfID : " << summary.rfID << std::endl \
+        << "type : " << summary.type << std::endl;
+        return os;
+    }
 };
 
 /// @brief Hash function for fast ephemeris retrieval
@@ -80,7 +107,8 @@ public:
      * @param p Pointer to a summary line
      * @return std::size_t Hash value computed as per formula
      */
-    std::size_t operator()(const spkSummary &p) const { return p.centerID + p.targetID * 170 + p.rfID * 31; }
+    std::size_t operator()(const spkSummary &p) const { 
+    return p.centerID + p.targetID * 170 + p.rfID * 31; }
 };
 
 /// @brief The main FERT class

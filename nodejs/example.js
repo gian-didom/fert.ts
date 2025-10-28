@@ -7,7 +7,7 @@ console.log('============================\n');
 
 // You'll need to provide a path to your metakernel YAML file
 // This is just an example - replace with your actual metakernel path
-const metakernelPath = path.join(__dirname, '..', 'data', 'metakernel.yaml');
+const metakernelPath = path.join(__dirname, 'data', 'metaKernel.yml');
 
 try {
     // Initialize FERT with metakernel
@@ -24,15 +24,15 @@ try {
     fert.printPckSummary();
     
     // Example: Get Earth's position relative to the Solar System Barycenter
-    const et = 0; // J2000 epoch (2000-01-01 12:00:00 TDB)
+    const et = 6.696e+08; // J2000 epoch (2000-01-01 12:00:00 TDB)
     
     console.log(`\nExamples at J2000 epoch (ET = ${et} seconds):`);
     console.log('===========================================');
     
     // Get Earth's position only
     try {
-        const earthPosition = fert.getState(et, SPICE_IDS.EARTH, SPICE_IDS.SOLAR_SYSTEM_BARYCENTER, SPICE_IDS.J2000);
-        console.log(`Earth position relative to SSB: [${earthPosition[0].toFixed(3)}, ${earthPosition[1].toFixed(3)}, ${earthPosition[2].toFixed(3)}] km`);
+        const earthPosition = fert.getState(et, SPICE_IDS.EARTH, SPICE_IDS.EARTH_MOON_BARYCENTER, SPICE_IDS.J2000);
+        console.log(`Earth position relative to EMB: [${earthPosition[0].toFixed(3)}, ${earthPosition[1].toFixed(3)}, ${earthPosition[2].toFixed(3)}] km`);
     } catch (error) {
         console.log(`Error getting Earth position: ${error.message}`);
     }

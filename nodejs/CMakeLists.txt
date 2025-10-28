@@ -7,10 +7,17 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # Apply CMake configuration as specified
 if(APPLE)
-    set(CMAKE_OSX_ARCHITECTURES "x86_64")
+    # Detect architecture from cmake-js if available
+    if(DEFINED CMAKE_JS_ARCH)
+        if(CMAKE_JS_ARCH STREQUAL "x64")
+            set(CMAKE_OSX_ARCHITECTURES "x86_64")
+        elseif(CMAKE_JS_ARCH STREQUAL "arm64")
+            set(CMAKE_OSX_ARCHITECTURES "arm64")
+        endif()
+    endif()
 endif()
-set(CMAKE_PREFIX_PATH "/usr/local")
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -march=x86-64-v3")
+# set(CMAKE_PREFIX_PATH "/usr/local")
+# set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -march=x86-64-v3")
 
 # Find cmake-js include and source files
 if(DEFINED CMAKE_JS_INC)

@@ -1,0 +1,9 @@
+'spk':
+  - "./data/kernels/de432_red.bsp"         #Used to test Type 2
+  - "./data/kernels/mar097_red.bsp"         #Used to test Type 3
+  - "./data/kernels/2000SG344_3054374.15"   #Used to test Type 21
+  - "./data/kernels/HaloLUMIO_red.bsp"      #Used to test Type 9
+
+'pck':
+  - "./data/kernels/pck00011_red.tpc"       #Used to test multiple segment, multiple data PCK
+  - "./data/kernels/gm_de431.tpc"           #Used to test simple PCK reading

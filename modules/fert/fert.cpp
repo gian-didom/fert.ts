@@ -190,7 +190,9 @@ void fert::Cfert::printSpkSummary()
 fert::spkMap::iterator fert::Cfert::findSPKdata(const double et, const int tID, const int cID, const int rID)
 {
     spkSummary k0(et, tID, cID, rID);
+    std::cout << "Calling sMap.find(k0)" << std::endl;
     spkMap::iterator it = sMap.find(k0);
+    std::cout << "Called sMap.find(k0)" << std::endl;
     if (it == sMap.end())
     {
         throw std::invalid_argument("No kernel data for the given inputs.");
@@ -351,6 +353,7 @@ fert::spkSummary::spkSummary(double t_0, double t_f, int tID, int cID, int rID, 
     centerID = cID;
     rfID = rID;
     type = tp;
+    fake = false;
 };
 
 fert::spkSummary::spkSummary(double t_0, int tID, int cID, int rID)
@@ -362,6 +365,7 @@ fert::spkSummary::spkSummary(double t_0, int tID, int cID, int rID)
 
     tf = 0;
     type = 0;
+    fake = true;
 };
 
 // PCK related functions

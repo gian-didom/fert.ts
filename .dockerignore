@@ -1,0 +1,13 @@
+build/
+node_modules/
+*.node
+prebuilds/
+.git/
+.cmake-js/
+**/.DS_Store
+*/build/
+*/node_modules/
+*/prebuilds/
+tests/build/
+tests/external/cspice/src/*.o
+tests/external/cspice/lib/*.a

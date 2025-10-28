@@ -1,0 +1,142 @@
+name: Prebuild
+
+on:
+  push:
+    branches: [ main, master ]
+    tags: [ 'v*' ]
+  pull_request:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  prebuild:
+    strategy:
+      matrix:
+        include:
+          # macOS builds
+          - os: macos-latest
+            arch: x64
+            node: '18'
+          - os: macos-latest  
+            arch: arm64
+            node: '18'
+          
+          # Linux builds
+          - os: ubuntu-latest
+            arch: x64 
+            node: '18'
+          - os: ubuntu-latest
+            arch: arm64
+            node: '18'
+            
+          # Windows builds
+          - os: windows-latest
+            arch: x64
+            node: '18'
+          - os: windows-latest
+            arch: ia32
+            node: '18'
+
+    runs-on: ${{ matrix.os }}
+    
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        submodules: recursive
+        
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: ${{ matrix.node }}
+        architecture: ${{ matrix.arch }}
+        
+    - name: Setup Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.x'
+        
+    - name: Install CMake (Ubuntu)
+      if: matrix.os == 'ubuntu-latest'
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y cmake build-essential
+        
+    - name: Install cross-compilation tools (Ubuntu ARM64)
+      if: matrix.os == 'ubuntu-latest' && matrix.arch == 'arm64'
+      run: |
+        sudo apt-get install -y gcc-aarch64-linux-gnu g++-aarch64-linux-gnu
+        
+    - name: Install dependencies
+      run: |
+        cd nodejs
+        npm ci
+        
+    - name: Build main FERT library (macOS/Linux)
+      if: matrix.os != 'windows-latest'
+      run: |
+        mkdir -p build
+        cd build
+        cmake -DCMAKE_BUILD_TYPE=Release -DBUILD_TESTING=0 ..
+        make -j$(nproc)
+        
+    - name: Build main FERT library (Windows)
+      if: matrix.os == 'windows-latest'
+      run: |
+        mkdir build
+        cd build
+        cmake -DCMAKE_BUILD_TYPE=Release -DBUILD_TESTING=0 ..
+        cmake --build . --config Release --parallel
+        
+    - name: Create prebuild
+      run: |
+        cd nodejs
+        npm run prebuild -- --arch=${{ matrix.arch }}
+        
+    - name: Upload prebuilds
+      uses: actions/upload-artifact@v4
+      with:
+        name: prebuilds-${{ matrix.os }}-${{ matrix.arch }}
+        path: nodejs/prebuilds/
+        
+  # Collect all prebuilds and create release
+  release:
+    needs: prebuild
+    runs-on: ubuntu-latest
+    if: startsWith(github.ref, 'refs/tags/v')
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        registry-url: 'https://registry.npmjs.org'
+        
+    - name: Download all prebuilds
+      uses: actions/download-artifact@v4
+      with:
+        path: nodejs/prebuilds/
+        pattern: prebuilds-*
+        merge-multiple: true
+        
+    - name: List prebuilds
+      run: |
+        cd nodejs
+        find prebuilds/ -name "*.node" -ls
+        
+    - name: Publish to npm
+      run: |
+        cd nodejs
+        npm publish
+      env:
+        NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        
+    - name: Create GitHub Release
+      uses: softprops/action-gh-release@v1
+      with:
+        files: nodejs/prebuilds/**/*
+        draft: false
+        prerelease: false
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

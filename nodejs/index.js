@@ -62,6 +62,7 @@ class Fert {
 const SPICE_IDS = {
     // Solar system barycenter and Sun
     SOLAR_SYSTEM_BARYCENTER: 0,
+    EARTH_MOON_BARYCENTER: 3,
     SUN: 10,
     
     // Planets
