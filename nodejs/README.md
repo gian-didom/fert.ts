@@ -4,7 +4,33 @@ Fast Ephemeris Retrieval Tool (FERT) Node.js bindings for high-performance orbit
 
 ## Installation
 
-### Prerequisites
+### From GitHub Packages
+
+First, configure npm to use GitHub Packages for `@dartlab` scope:
+
+```bash
+# Create or edit ~/.npmrc
+echo "@dartlab:registry=https://npm.pkg.github.com" >> ~/.npmrc
+```
+
+Then authenticate with GitHub (you need a Personal Access Token with `read:packages` scope):
+
+```bash
+npm login --scope=@dartlab --registry=https://npm.pkg.github.com
+# Username: your-github-username
+# Password: your-github-personal-access-token
+# Email: your-email@example.com
+```
+
+Install the package:
+
+```bash
+npm install @dartlab/fert-node
+```
+
+### Build from Source
+
+#### Prerequisites
 
 - Node.js 14+ 
 - CMake 3.15+
