@@ -9,6 +9,17 @@ include(cmakeUtils)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+# Compiler options for SIMD support (same as main project)
+if(CMAKE_SYSTEM_PROCESSOR MATCHES "x86_64|AMD64")
+    # On native x86_64, we can use AVX2 optimizations
+    add_compile_options("-mavx2" "-mfma")
+    message(STATUS "Enabled AVX2/FMA optimizations for x86_64")
+elseif(CMAKE_SYSTEM_PROCESSOR MATCHES "arm64|aarch64")
+    # On ARM64 (Apple Silicon), we rely on the SIMD abstraction layer
+    # No architecture-specific flags needed
+    message(STATUS "Using SIMD abstraction layer for ARM64")
+endif()
+
 # Apply CMake configuration as specified
 if(APPLE)
     # Detect architecture from cmake-js if available
