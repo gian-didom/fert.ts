@@ -21,11 +21,23 @@ function(my_add_library)
         PUBLIC ${_arg_LINK_LIBRARIES}
     )
 
-    set_target_properties(${_arg_LIB_NAME}
-        PROPERTIES
-            VERSION ${PROJECT_VERSION}
-            PUBLIC_HEADER "${_arg_LIB_PUBLIC_HEADERS}"
-            PRIVATE_HEADER "${_arg_LIB_PRIVATE_HEADERS}")
+    # Only set properties if PROJECT_VERSION is defined
+    if(DEFINED PROJECT_VERSION)
+        set_target_properties(${_arg_LIB_NAME}
+            PROPERTIES VERSION ${PROJECT_VERSION})
+    endif()
+    
+    # Only set PUBLIC_HEADER if headers are provided
+    if(_arg_LIB_PUBLIC_HEADERS)
+        set_target_properties(${_arg_LIB_NAME}
+            PROPERTIES PUBLIC_HEADER "${_arg_LIB_PUBLIC_HEADERS}")
+    endif()
+    
+    # Only set PRIVATE_HEADER if headers are provided
+    if(_arg_LIB_PRIVATE_HEADERS)
+        set_target_properties(${_arg_LIB_NAME}
+            PROPERTIES PRIVATE_HEADER "${_arg_LIB_PRIVATE_HEADERS}")
+    endif()
 
     foreach(tmp_LIB_SOURCE ${_arg_LIB_SOURCES})
         set(FULL_PATH_LIB_SOURCES ${FULL_PATH_LIB_SOURCES} $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/${tmp_LIB_SOURCE}> )
