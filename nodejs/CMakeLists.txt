@@ -1,6 +1,10 @@
 cmake_minimum_required(VERSION 3.15)
 project(fert-node)
 
+# Include custom CMake utilities from parent project
+list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/../cmake_modules")
+include(cmakeUtils)
+
 # Set C++ standard
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
