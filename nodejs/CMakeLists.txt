@@ -74,6 +74,16 @@ endif()
 include_directories(../modules/fert)
 include_directories(../external)
 
+# Find YAML-CPP (required by fert library)
+find_package(YamlCpp 0.6)
+if(NOT YAMLCPP_FOUND)
+    message(FATAL_ERROR "YAML-CPP not found. Please install yaml-cpp development package.")
+endif()
+message(STATUS "YAMLCPP_FOUND              = ${YAMLCPP_FOUND}")
+message(STATUS "YAMLCPP_LIBRARY            = ${YAMLCPP_LIBRARY}")
+message(STATUS "YAMLCPP_INCLUDE_DIR        = ${YAMLCPP_INCLUDE_DIR}")
+include_directories(${YAMLCPP_INCLUDE_DIR})
+
 # Check if parent fert library exists
 if(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/../build/modules/fert/libfert.dylib")
     # Link to existing library
@@ -94,9 +104,9 @@ add_library(${PROJECT_NAME} SHARED ${SOURCE_FILES} ${CMAKE_JS_SOURCES})
 
 # Link libraries
 if(DEFINED CMAKE_JS_LIB)
-    target_link_libraries(${PROJECT_NAME} ${CMAKE_JS_LIB} ${FERT_LIBRARY})
+    target_link_libraries(${PROJECT_NAME} ${CMAKE_JS_LIB} ${FERT_LIBRARY} ${YAMLCPP_LIBRARY})
 else()
-    target_link_libraries(${PROJECT_NAME} ${FERT_LIBRARY})
+    target_link_libraries(${PROJECT_NAME} ${FERT_LIBRARY} ${YAMLCPP_LIBRARY})
 endif()
 
 # Set properties
