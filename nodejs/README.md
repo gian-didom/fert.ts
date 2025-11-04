@@ -6,6 +6,27 @@ Fast Ephemeris Retrieval Tool (FERT) Node.js bindings for high-performance orbit
 
 ### From GitHub Packages
 
+#### System Prerequisites
+
+FERT Node.js requires yaml-cpp library to be installed on your system:
+
+**Ubuntu/Debian:**
+```bash
+sudo apt-get install libyaml-cpp-dev
+```
+
+**macOS (Homebrew):**
+```bash
+brew install yaml-cpp
+```
+
+**Fedora/RHEL:**
+```bash
+sudo dnf install yaml-cpp-devel
+```
+
+#### Install Package
+
 First, configure npm to use GitHub Packages for `@dartlab` scope:
 
 ```bash
