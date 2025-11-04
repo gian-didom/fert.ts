@@ -1,0 +1,9 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/didomenico/fertjs/cmake_install.cmake",
+		"/home/didomenico/fertjs/modules/cmake_install.cmake",
+		"/home/didomenico/fertjs/modules/fert/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

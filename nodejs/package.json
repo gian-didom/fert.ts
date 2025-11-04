@@ -1,8 +1,9 @@
 {
   "name": "@gian-didom/fert-node",
-  "version": "0.9.9",
+  "version": "0.9.20",
   "description": "Fast Ephemeris Retrieval Tool (FERT) - Node.js bindings",
   "main": "index.js",
+  "gypfile": false,
   "repository": {
     "type": "git",
     "url": "https://github.com/gian-didom/fert-ts.git"
@@ -11,20 +12,8 @@
     "registry": "https://npm.pkg.github.com"
   },
   "scripts": {
-    "build": "cmake-js build --CDNAPI_VERSION=8",
-    "rebuild": "cmake-js rebuild --CDNAPI_VERSION=8", 
     "test": "node example.js",
-    "clean": "cmake-js clean",
-    "prebuild": "node scripts/prebuild.js",
-    "prebuild:all": "node scripts/prebuild.js --all",
-    "prebuild:linux": "node scripts/prebuild.js --platform=linux",
-    "prebuild:win32": "node scripts/prebuild.js --platform=win32", 
-    "prebuild:darwin": "node scripts/prebuild.js --platform=darwin",
-    "prebuild:x64": "node scripts/prebuild.js --arch=x64",
-    "prebuild:arm64": "node scripts/prebuild.js --arch=arm64",
-    "prebuild:docker": "scripts/prebuild-docker.sh",
-    "prebuild-upload": "prebuild --upload-all",
-    "install": "prebuild-install --verbose || npm run rebuild"
+    "postinstall": "node scripts/postinstall.js"
   },
   "keywords": [
     "ephemeris",
@@ -36,20 +25,15 @@
   "author": "DART Lab - Politecnico di Milano",
   "license": "MIT",
   "dependencies": {
-    "cmake-js": "^7.3.0",
-    "prebuild-install": "^7.1.1"
+    "bindings": "^1.5.0"
   },
   "devDependencies": {
     "bindings": "^1.5.0",
-    "prebuild": "^13.0.1"
+    "cmake-js": "^7.3.0"
   },
   "files": [
     "index.js",
-    "src/",
-    "CMakeLists.txt",
-    "prebuilds/"
-  ],
-  "binary": {
-    "napi_versions": [3, 4, 5, 6, 7, 8]
-  }
+    "prebuilds/**/*",
+    "scripts/postinstall.js"
+  ]
 }

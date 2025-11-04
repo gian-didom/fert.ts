@@ -1,0 +1,29 @@
+# Build files
+build/
+CMakeLists.txt
+binding.gyp
+*.gyp
+
+# Development files
+src/
+cmake_modules/
+scripts/prebuild*.js
+scripts/prebuild*.sh
+scripts/save-prebuild.js
+scripts/check-dependencies.js
+
+# Documentation
+PREBUILD.md
+
+# Package files
+package_bak.json
+*.tar.gz
+
+# Test files
+example.js
+simple-test.js
+data/
+
+# Misc
+.DS_Store
+*.log

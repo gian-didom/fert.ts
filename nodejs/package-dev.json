@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "build": "cmake-js build --CDNAPI_VERSION=8",
+    "rebuild": "cmake-js rebuild --CDNAPI_VERSION=8",
+    "clean": "cmake-js clean",
+    "prebuild": "npm run build && node scripts/save-prebuild.js"
+  },
+  "devDependencies": {
+    "cmake-js": "^7.3.0"
+  }
+}

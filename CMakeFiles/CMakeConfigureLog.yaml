@@ -1,0 +1,2773 @@
+
+---
+events:
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/share/cmake-4.2/Modules/CMakeDetermineSystem.cmake:12 (find_program)"
+      - "CMakeLists.txt:6 (project)"
+    mode: "program"
+    variable: "CMAKE_UNAME"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "uname"
+    candidate_directories:
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/bin/"
+      - "/home/simulations/tools/java/jdk-22.0.2/bin/"
+      - "/home/didomenico/local/go/bin/"
+      - "/home/didomenico/.local/bin/"
+      - "/home/didomenico/.nvm/versions/node/v25.0.0/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/usr/bin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+    searched_directories:
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/bin/uname"
+      - "/home/simulations/tools/java/jdk-22.0.2/bin/uname"
+      - "/home/didomenico/local/go/bin/uname"
+      - "/home/didomenico/.local/bin/uname"
+      - "/home/didomenico/.nvm/versions/node/v25.0.0/bin/uname"
+      - "/usr/local/sbin/uname"
+      - "/usr/local/bin/uname"
+      - "/usr/sbin/uname"
+    found: "/usr/bin/uname"
+    search_context:
+      ENV{PATH}:
+        - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/bin"
+        - "/home/simulations/tools/java/jdk-22.0.2/bin"
+        - "/home/didomenico/local/go/bin"
+        - "/home/didomenico/.local/bin"
+        - "/home/simulations/tools/java/jdk-22.0.2/bin"
+        - "/home/didomenico/local/go/bin"
+        - "/home/didomenico/.nvm/versions/node/v25.0.0/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/share/cmake-4.2/Modules/CMakeDetermineSystem.cmake:212 (message)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      The system is: Linux - 6.8.0-49-generic - x86_64
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/share/cmake-4.2/Modules/CMakeUnixFindMake.cmake:5 (find_program)"
+      - "CMakeLists.txt:6 (project)"
+    mode: "program"
+    variable: "CMAKE_MAKE_PROGRAM"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "gmake"
+      - "make"
+      - "smake"
+    candidate_directories:
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/bin/"
+      - "/home/simulations/tools/java/jdk-22.0.2/bin/"
+      - "/home/didomenico/local/go/bin/"
+      - "/home/didomenico/.local/bin/"
+      - "/home/didomenico/.nvm/versions/node/v25.0.0/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/usr/bin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+    searched_directories:
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/bin/gmake"
+      - "/home/simulations/tools/java/jdk-22.0.2/bin/gmake"
+      - "/home/didomenico/local/go/bin/gmake"
+      - "/home/didomenico/.local/bin/gmake"
+      - "/home/didomenico/.nvm/versions/node/v25.0.0/bin/gmake"
+      - "/usr/local/sbin/gmake"
+      - "/usr/local/bin/gmake"
+      - "/usr/sbin/gmake"
+    found: "/usr/bin/gmake"
+    search_context:
+      ENV{PATH}:
+        - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/bin"
+        - "/home/simulations/tools/java/jdk-22.0.2/bin"
+        - "/home/didomenico/local/go/bin"
+        - "/home/didomenico/.local/bin"
+        - "/home/simulations/tools/java/jdk-22.0.2/bin"
+        - "/home/didomenico/local/go/bin"
+        - "/home/didomenico/.nvm/versions/node/v25.0.0/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/share/cmake-4.2/Modules/CMakeDetermineCompiler.cmake:73 (find_program)"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:69 (_cmake_find_compiler)"
+      - "CMakeLists.txt:6 (project)"
+    mode: "program"
+    variable: "CMAKE_CXX_COMPILER"
+    description: "CXX compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "c++"
+      - "CC"
+      - "g++"
+      - "aCC"
+      - "cl"
+      - "bcc"
+      - "xlC"
+      - "icpx"
+      - "icx"
+      - "clang++"
+    candidate_directories:
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/bin/"
+      - "/home/simulations/tools/java/jdk-22.0.2/bin/"
+      - "/home/didomenico/local/go/bin/"
+      - "/home/didomenico/.local/bin/"
+      - "/home/didomenico/.nvm/versions/node/v25.0.0/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/usr/bin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+    searched_directories:
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/bin/c++"
+      - "/home/simulations/tools/java/jdk-22.0.2/bin/c++"
+      - "/home/didomenico/local/go/bin/c++"
+      - "/home/didomenico/.local/bin/c++"
+      - "/home/didomenico/.nvm/versions/node/v25.0.0/bin/c++"
+      - "/usr/local/sbin/c++"
+      - "/usr/local/bin/c++"
+      - "/usr/sbin/c++"
+    found: "/usr/bin/c++"
+    search_context:
+      ENV{PATH}:
+        - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/bin"
+        - "/home/simulations/tools/java/jdk-22.0.2/bin"
+        - "/home/didomenico/local/go/bin"
+        - "/home/didomenico/.local/bin"
+        - "/home/simulations/tools/java/jdk-22.0.2/bin"
+        - "/home/didomenico/local/go/bin"
+        - "/home/didomenico/.nvm/versions/node/v25.0.0/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:6 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCXXCompilerId.cpp.in"
+    candidate_directories:
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/share/cmake-4.2/Modules/"
+      - "/home/didomenico/fertjs/cmake_modules/"
+    found: "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/share/cmake-4.2/Modules/CMakeCXXCompilerId.cpp.in"
+    search_context:
+      ENV{PATH}:
+        - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/bin"
+        - "/home/simulations/tools/java/jdk-22.0.2/bin"
+        - "/home/didomenico/local/go/bin"
+        - "/home/didomenico/.local/bin"
+        - "/home/simulations/tools/java/jdk-22.0.2/bin"
+        - "/home/didomenico/local/go/bin"
+        - "/home/didomenico/.nvm/versions/node/v25.0.0/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /usr/bin/c++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /home/didomenico/fertjs/CMakeFiles/4.2.0-rc1/CompilerIdCXX/a.out
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:6 (project)"
+    mode: "program"
+    variable: "CMAKE_AR"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "ar"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/bin/"
+      - "/home/simulations/tools/java/jdk-22.0.2/bin/"
+      - "/home/didomenico/local/go/bin/"
+      - "/home/didomenico/.local/bin/"
+      - "/home/didomenico/.nvm/versions/node/v25.0.0/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+    found: "/usr/bin/ar"
+    search_context:
+      ENV{PATH}:
+        - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/bin"
+        - "/home/simulations/tools/java/jdk-22.0.2/bin"
+        - "/home/didomenico/local/go/bin"
+        - "/home/didomenico/.local/bin"
+        - "/home/simulations/tools/java/jdk-22.0.2/bin"
+        - "/home/didomenico/local/go/bin"
+        - "/home/didomenico/.nvm/versions/node/v25.0.0/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:6 (project)"
+    mode: "program"
+    variable: "CMAKE_RANLIB"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "ranlib"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/bin/"
+      - "/home/simulations/tools/java/jdk-22.0.2/bin/"
+      - "/home/didomenico/local/go/bin/"
+      - "/home/didomenico/.local/bin/"
+      - "/home/didomenico/.nvm/versions/node/v25.0.0/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+    found: "/usr/bin/ranlib"
+    search_context:
+      ENV{PATH}:
+        - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/bin"
+        - "/home/simulations/tools/java/jdk-22.0.2/bin"
+        - "/home/didomenico/local/go/bin"
+        - "/home/didomenico/.local/bin"
+        - "/home/simulations/tools/java/jdk-22.0.2/bin"
+        - "/home/didomenico/local/go/bin"
+        - "/home/didomenico/.nvm/versions/node/v25.0.0/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:6 (project)"
+    mode: "program"
+    variable: "CMAKE_STRIP"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "strip"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/bin/"
+      - "/home/simulations/tools/java/jdk-22.0.2/bin/"
+      - "/home/didomenico/local/go/bin/"
+      - "/home/didomenico/.local/bin/"
+      - "/home/didomenico/.nvm/versions/node/v25.0.0/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+    found: "/usr/bin/strip"
+    search_context:
+      ENV{PATH}:
+        - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/bin"
+        - "/home/simulations/tools/java/jdk-22.0.2/bin"
+        - "/home/didomenico/local/go/bin"
+        - "/home/didomenico/.local/bin"
+        - "/home/simulations/tools/java/jdk-22.0.2/bin"
+        - "/home/didomenico/local/go/bin"
+        - "/home/didomenico/.nvm/versions/node/v25.0.0/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:6 (project)"
+    mode: "program"
+    variable: "CMAKE_LINKER"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "ld"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/bin/"
+      - "/home/simulations/tools/java/jdk-22.0.2/bin/"
+      - "/home/didomenico/local/go/bin/"
+      - "/home/didomenico/.local/bin/"
+      - "/home/didomenico/.nvm/versions/node/v25.0.0/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+    found: "/usr/bin/ld"
+    search_context:
+      ENV{PATH}:
+        - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/bin"
+        - "/home/simulations/tools/java/jdk-22.0.2/bin"
+        - "/home/didomenico/local/go/bin"
+        - "/home/didomenico/.local/bin"
+        - "/home/simulations/tools/java/jdk-22.0.2/bin"
+        - "/home/didomenico/local/go/bin"
+        - "/home/didomenico/.nvm/versions/node/v25.0.0/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:6 (project)"
+    mode: "program"
+    variable: "CMAKE_NM"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "nm"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/bin/"
+      - "/home/simulations/tools/java/jdk-22.0.2/bin/"
+      - "/home/didomenico/local/go/bin/"
+      - "/home/didomenico/.local/bin/"
+      - "/home/didomenico/.nvm/versions/node/v25.0.0/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+    found: "/usr/bin/nm"
+    search_context:
+      ENV{PATH}:
+        - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/bin"
+        - "/home/simulations/tools/java/jdk-22.0.2/bin"
+        - "/home/didomenico/local/go/bin"
+        - "/home/didomenico/.local/bin"
+        - "/home/simulations/tools/java/jdk-22.0.2/bin"
+        - "/home/didomenico/local/go/bin"
+        - "/home/didomenico/.nvm/versions/node/v25.0.0/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:6 (project)"
+    mode: "program"
+    variable: "CMAKE_OBJDUMP"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "objdump"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/bin/"
+      - "/home/simulations/tools/java/jdk-22.0.2/bin/"
+      - "/home/didomenico/local/go/bin/"
+      - "/home/didomenico/.local/bin/"
+      - "/home/didomenico/.nvm/versions/node/v25.0.0/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+    found: "/usr/bin/objdump"
+    search_context:
+      ENV{PATH}:
+        - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/bin"
+        - "/home/simulations/tools/java/jdk-22.0.2/bin"
+        - "/home/didomenico/local/go/bin"
+        - "/home/didomenico/.local/bin"
+        - "/home/simulations/tools/java/jdk-22.0.2/bin"
+        - "/home/didomenico/local/go/bin"
+        - "/home/didomenico/.nvm/versions/node/v25.0.0/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:6 (project)"
+    mode: "program"
+    variable: "CMAKE_OBJCOPY"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "objcopy"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/bin/"
+      - "/home/simulations/tools/java/jdk-22.0.2/bin/"
+      - "/home/didomenico/local/go/bin/"
+      - "/home/didomenico/.local/bin/"
+      - "/home/didomenico/.nvm/versions/node/v25.0.0/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+    found: "/usr/bin/objcopy"
+    search_context:
+      ENV{PATH}:
+        - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/bin"
+        - "/home/simulations/tools/java/jdk-22.0.2/bin"
+        - "/home/didomenico/local/go/bin"
+        - "/home/didomenico/.local/bin"
+        - "/home/simulations/tools/java/jdk-22.0.2/bin"
+        - "/home/didomenico/local/go/bin"
+        - "/home/didomenico/.nvm/versions/node/v25.0.0/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:6 (project)"
+    mode: "program"
+    variable: "CMAKE_READELF"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "readelf"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/bin/"
+      - "/home/simulations/tools/java/jdk-22.0.2/bin/"
+      - "/home/didomenico/local/go/bin/"
+      - "/home/didomenico/.local/bin/"
+      - "/home/didomenico/.nvm/versions/node/v25.0.0/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+    found: "/usr/bin/readelf"
+    search_context:
+      ENV{PATH}:
+        - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/bin"
+        - "/home/simulations/tools/java/jdk-22.0.2/bin"
+        - "/home/didomenico/local/go/bin"
+        - "/home/didomenico/.local/bin"
+        - "/home/simulations/tools/java/jdk-22.0.2/bin"
+        - "/home/didomenico/local/go/bin"
+        - "/home/didomenico/.nvm/versions/node/v25.0.0/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:6 (project)"
+    mode: "program"
+    variable: "CMAKE_DLLTOOL"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "dlltool"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/bin/"
+      - "/home/simulations/tools/java/jdk-22.0.2/bin/"
+      - "/home/didomenico/local/go/bin/"
+      - "/home/didomenico/.local/bin/"
+      - "/home/didomenico/.nvm/versions/node/v25.0.0/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+    searched_directories:
+      - "/usr/bin/dlltool"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/bin/dlltool"
+      - "/home/simulations/tools/java/jdk-22.0.2/bin/dlltool"
+      - "/home/didomenico/local/go/bin/dlltool"
+      - "/home/didomenico/.local/bin/dlltool"
+      - "/home/didomenico/.nvm/versions/node/v25.0.0/bin/dlltool"
+      - "/usr/local/sbin/dlltool"
+      - "/usr/local/bin/dlltool"
+      - "/usr/sbin/dlltool"
+      - "/sbin/dlltool"
+      - "/bin/dlltool"
+      - "/usr/games/dlltool"
+      - "/usr/local/games/dlltool"
+      - "/snap/bin/dlltool"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/bin"
+        - "/home/simulations/tools/java/jdk-22.0.2/bin"
+        - "/home/didomenico/local/go/bin"
+        - "/home/didomenico/.local/bin"
+        - "/home/simulations/tools/java/jdk-22.0.2/bin"
+        - "/home/didomenico/local/go/bin"
+        - "/home/didomenico/.nvm/versions/node/v25.0.0/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:6 (project)"
+    mode: "program"
+    variable: "CMAKE_ADDR2LINE"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "addr2line"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/bin/"
+      - "/home/simulations/tools/java/jdk-22.0.2/bin/"
+      - "/home/didomenico/local/go/bin/"
+      - "/home/didomenico/.local/bin/"
+      - "/home/didomenico/.nvm/versions/node/v25.0.0/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+    found: "/usr/bin/addr2line"
+    search_context:
+      ENV{PATH}:
+        - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/bin"
+        - "/home/simulations/tools/java/jdk-22.0.2/bin"
+        - "/home/didomenico/local/go/bin"
+        - "/home/didomenico/.local/bin"
+        - "/home/simulations/tools/java/jdk-22.0.2/bin"
+        - "/home/didomenico/local/go/bin"
+        - "/home/didomenico/.nvm/versions/node/v25.0.0/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:6 (project)"
+    mode: "program"
+    variable: "CMAKE_TAPI"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "tapi"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/bin/"
+      - "/home/simulations/tools/java/jdk-22.0.2/bin/"
+      - "/home/didomenico/local/go/bin/"
+      - "/home/didomenico/.local/bin/"
+      - "/home/didomenico/.nvm/versions/node/v25.0.0/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+    searched_directories:
+      - "/usr/bin/tapi"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/bin/tapi"
+      - "/home/simulations/tools/java/jdk-22.0.2/bin/tapi"
+      - "/home/didomenico/local/go/bin/tapi"
+      - "/home/didomenico/.local/bin/tapi"
+      - "/home/didomenico/.nvm/versions/node/v25.0.0/bin/tapi"
+      - "/usr/local/sbin/tapi"
+      - "/usr/local/bin/tapi"
+      - "/usr/sbin/tapi"
+      - "/sbin/tapi"
+      - "/bin/tapi"
+      - "/usr/games/tapi"
+      - "/usr/local/games/tapi"
+      - "/snap/bin/tapi"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/bin"
+        - "/home/simulations/tools/java/jdk-22.0.2/bin"
+        - "/home/didomenico/local/go/bin"
+        - "/home/didomenico/.local/bin"
+        - "/home/simulations/tools/java/jdk-22.0.2/bin"
+        - "/home/didomenico/local/go/bin"
+        - "/home/didomenico/.nvm/versions/node/v25.0.0/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/share/cmake-4.2/Modules/Compiler/GNU-FindBinUtils.cmake:18 (find_program)"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
+      - "CMakeLists.txt:6 (project)"
+    mode: "program"
+    variable: "CMAKE_CXX_COMPILER_AR"
+    description: "A wrapper around 'ar' adding the appropriate '--plugin' option for the GCC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "gcc-ar-13.2"
+      - "gcc-ar-13"
+      - "gcc-ar13"
+      - "gcc-ar"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/bin/"
+      - "/home/simulations/tools/java/jdk-22.0.2/bin/"
+      - "/home/didomenico/local/go/bin/"
+      - "/home/didomenico/.local/bin/"
+      - "/home/didomenico/.nvm/versions/node/v25.0.0/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+    searched_directories:
+      - "/usr/bin/gcc-ar-13.2"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/bin/gcc-ar-13.2"
+      - "/home/simulations/tools/java/jdk-22.0.2/bin/gcc-ar-13.2"
+      - "/home/didomenico/local/go/bin/gcc-ar-13.2"
+      - "/home/didomenico/.local/bin/gcc-ar-13.2"
+      - "/home/didomenico/.nvm/versions/node/v25.0.0/bin/gcc-ar-13.2"
+      - "/usr/local/sbin/gcc-ar-13.2"
+      - "/usr/local/bin/gcc-ar-13.2"
+      - "/usr/sbin/gcc-ar-13.2"
+      - "/sbin/gcc-ar-13.2"
+      - "/bin/gcc-ar-13.2"
+      - "/usr/games/gcc-ar-13.2"
+      - "/usr/local/games/gcc-ar-13.2"
+      - "/snap/bin/gcc-ar-13.2"
+    found: "/usr/bin/gcc-ar-13"
+    search_context:
+      ENV{PATH}:
+        - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/bin"
+        - "/home/simulations/tools/java/jdk-22.0.2/bin"
+        - "/home/didomenico/local/go/bin"
+        - "/home/didomenico/.local/bin"
+        - "/home/simulations/tools/java/jdk-22.0.2/bin"
+        - "/home/didomenico/local/go/bin"
+        - "/home/didomenico/.nvm/versions/node/v25.0.0/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/share/cmake-4.2/Modules/Compiler/GNU-FindBinUtils.cmake:30 (find_program)"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
+      - "CMakeLists.txt:6 (project)"
+    mode: "program"
+    variable: "CMAKE_CXX_COMPILER_RANLIB"
+    description: "A wrapper around 'ranlib' adding the appropriate '--plugin' option for the GCC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "gcc-ranlib-13.2"
+      - "gcc-ranlib-13"
+      - "gcc-ranlib13"
+      - "gcc-ranlib"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/bin/"
+      - "/home/simulations/tools/java/jdk-22.0.2/bin/"
+      - "/home/didomenico/local/go/bin/"
+      - "/home/didomenico/.local/bin/"
+      - "/home/didomenico/.nvm/versions/node/v25.0.0/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+    searched_directories:
+      - "/usr/bin/gcc-ranlib-13.2"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/bin/gcc-ranlib-13.2"
+      - "/home/simulations/tools/java/jdk-22.0.2/bin/gcc-ranlib-13.2"
+      - "/home/didomenico/local/go/bin/gcc-ranlib-13.2"
+      - "/home/didomenico/.local/bin/gcc-ranlib-13.2"
+      - "/home/didomenico/.nvm/versions/node/v25.0.0/bin/gcc-ranlib-13.2"
+      - "/usr/local/sbin/gcc-ranlib-13.2"
+      - "/usr/local/bin/gcc-ranlib-13.2"
+      - "/usr/sbin/gcc-ranlib-13.2"
+      - "/sbin/gcc-ranlib-13.2"
+      - "/bin/gcc-ranlib-13.2"
+      - "/usr/games/gcc-ranlib-13.2"
+      - "/usr/local/games/gcc-ranlib-13.2"
+      - "/snap/bin/gcc-ranlib-13.2"
+    found: "/usr/bin/gcc-ranlib-13"
+    search_context:
+      ENV{PATH}:
+        - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/bin"
+        - "/home/simulations/tools/java/jdk-22.0.2/bin"
+        - "/home/didomenico/local/go/bin"
+        - "/home/didomenico/.local/bin"
+        - "/home/simulations/tools/java/jdk-22.0.2/bin"
+        - "/home/didomenico/local/go/bin"
+        - "/home/didomenico/.nvm/versions/node/v25.0.0/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/share/cmake-4.2/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:6 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/didomenico/fertjs/CMakeFiles/CMakeScratch/TryCompile-GKpsRS"
+      binary: "/home/didomenico/fertjs/CMakeFiles/CMakeScratch/TryCompile-GKpsRS"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/didomenico/fertjs/cmake_modules"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/didomenico/fertjs/CMakeFiles/CMakeScratch/TryCompile-GKpsRS'
+        
+        Run Build Command(s): /home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e2dd4/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_e2dd4.dir/build.make CMakeFiles/cmTC_e2dd4.dir/build
+        gmake[1]: Entering directory '/home/didomenico/fertjs/CMakeFiles/CMakeScratch/TryCompile-GKpsRS'
+        Building CXX object CMakeFiles/cmTC_e2dd4.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -v -o CMakeFiles/cmTC_e2dd4.dir/CMakeCXXCompilerABI.cpp.o -c /home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.2.0-23ubuntu4' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-uJ7kn6/gcc-13-13.2.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-13-uJ7kn6/gcc-13-13.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.2.0 (Ubuntu 13.2.0-23ubuntu4) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e2dd4.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_e2dd4.dir/'
+         /usr/libexec/gcc/x86_64-linux-gnu/13/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_e2dd4.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccIRrMMW.s
+        GNU C++17 (Ubuntu 13.2.0-23ubuntu4) version 13.2.0 (x86_64-linux-gnu)
+        	compiled by GNU C version 13.2.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.26-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/13"
+        ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/include/c++/13
+         /usr/include/x86_64-linux-gnu/c++/13
+         /usr/include/c++/13/backward
+         /usr/lib/gcc/x86_64-linux-gnu/13/include
+         /usr/local/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        Compiler executable checksum: 4e0f319cd9945d8f5a9eeeeec1481ba5
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e2dd4.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_e2dd4.dir/'
+         as -v --64 -o CMakeFiles/cmTC_e2dd4.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccIRrMMW.s
+        GNU assembler version 2.42 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.42
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e2dd4.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_e2dd4.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_e2dd4
+        /home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e2dd4.dir/link.txt --verbose=1
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.2.0-23ubuntu4' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-uJ7kn6/gcc-13-13.2.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-13-uJ7kn6/gcc-13-13.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.2.0 (Ubuntu 13.2.0-23ubuntu4) 
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_e2dd4' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_e2dd4.'
+         /usr/libexec/gcc/x86_64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccsyCd6V.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_e2dd4 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. -v CMakeFiles/cmTC_e2dd4.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o
+        collect2 version 13.2.0
+        /usr/bin/ld -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccsyCd6V.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_e2dd4 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. -v CMakeFiles/cmTC_e2dd4.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o
+        GNU ld (GNU Binutils for Ubuntu) 2.42
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_e2dd4' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_e2dd4.'
+        /usr/bin/c++  -v -Wl,-v CMakeFiles/cmTC_e2dd4.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_e2dd4
+        gmake[1]: Leaving directory '/home/didomenico/fertjs/CMakeFiles/CMakeScratch/TryCompile-GKpsRS'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake:217 (message)"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/share/cmake-4.2/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/include/c++/13]
+          add: [/usr/include/x86_64-linux-gnu/c++/13]
+          add: [/usr/include/c++/13/backward]
+          add: [/usr/lib/gcc/x86_64-linux-gnu/13/include]
+          add: [/usr/local/include]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/include/c++/13] ==> [/usr/include/c++/13]
+        collapse include dir [/usr/include/x86_64-linux-gnu/c++/13] ==> [/usr/include/x86_64-linux-gnu/c++/13]
+        collapse include dir [/usr/include/c++/13/backward] ==> [/usr/include/c++/13/backward]
+        collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/13/include] ==> [/usr/lib/gcc/x86_64-linux-gnu/13/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/include/c++/13;/usr/include/x86_64-linux-gnu/c++/13;/usr/include/c++/13/backward;/usr/lib/gcc/x86_64-linux-gnu/13/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/share/cmake-4.2/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
+        ignore line: [Change Dir: '/home/didomenico/fertjs/CMakeFiles/CMakeScratch/TryCompile-GKpsRS']
+        ignore line: []
+        ignore line: [Run Build Command(s): /home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e2dd4/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_e2dd4.dir/build.make CMakeFiles/cmTC_e2dd4.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/didomenico/fertjs/CMakeFiles/CMakeScratch/TryCompile-GKpsRS']
+        ignore line: [Building CXX object CMakeFiles/cmTC_e2dd4.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_e2dd4.dir/CMakeCXXCompilerABI.cpp.o -c /home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.2.0-23ubuntu4' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-uJ7kn6/gcc-13-13.2.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-13-uJ7kn6/gcc-13-13.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.2.0 (Ubuntu 13.2.0-23ubuntu4) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e2dd4.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_e2dd4.dir/']
+        ignore line: [ /usr/libexec/gcc/x86_64-linux-gnu/13/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_e2dd4.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccIRrMMW.s]
+        ignore line: [GNU C++17 (Ubuntu 13.2.0-23ubuntu4) version 13.2.0 (x86_64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 13.2.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.26-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/13"]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/include/c++/13]
+        ignore line: [ /usr/include/x86_64-linux-gnu/c++/13]
+        ignore line: [ /usr/include/c++/13/backward]
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/13/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 4e0f319cd9945d8f5a9eeeeec1481ba5]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e2dd4.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_e2dd4.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_e2dd4.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccIRrMMW.s]
+        ignore line: [GNU assembler version 2.42 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.42]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e2dd4.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_e2dd4.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_e2dd4]
+        ignore line: [/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e2dd4.dir/link.txt --verbose=1]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.2.0-23ubuntu4' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-uJ7kn6/gcc-13-13.2.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-13-uJ7kn6/gcc-13-13.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.2.0 (Ubuntu 13.2.0-23ubuntu4) ]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_e2dd4' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_e2dd4.']
+        link line: [ /usr/libexec/gcc/x86_64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccsyCd6V.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_e2dd4 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. -v CMakeFiles/cmTC_e2dd4.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o]
+          arg [/usr/libexec/gcc/x86_64-linux-gnu/13/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccsyCd6V.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-znow] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_e2dd4] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../..]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_e2dd4.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o]
+        ignore line: [collect2 version 13.2.0]
+        ignore line: [/usr/bin/ld -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccsyCd6V.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_e2dd4 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. -v CMakeFiles/cmTC_e2dd4.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o]
+        linker tool for 'CXX': /usr/bin/ld
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o] ==> [/usr/lib/x86_64-linux-gnu/crtn.o]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13] ==> [/usr/lib/gcc/x86_64-linux-gnu/13]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../..] ==> [/usr/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/usr/lib/x86_64-linux-gnu/Scrt1.o;/usr/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o;/usr/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/13;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/share/cmake-4.2/Modules/Internal/CMakeDetermineLinkerId.cmake:36 (message)"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/share/cmake-4.2/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Running the CXX compiler's linker: "/usr/bin/ld" "-v"
+      GNU ld (GNU Binutils for Ubuntu) 2.42
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "CMakeLists.txt:45 (find_package)"
+    name: "IntelDPCPP"
+    configs:
+      -
+        filename: "IntelDPCPPConfig.cmake"
+        kind: "cmake"
+      -
+        filename: "inteldpcpp-config.cmake"
+        kind: "cmake"
+    version_request:
+      exact: false
+    settings:
+      required: "optional"
+      quiet: true
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      names:
+        - "IntelDPCPP"
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "/home/didomenico/fertjs/CMakeFiles/pkgRedirects/IntelDPCPPConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/didomenico/fertjs/CMakeFiles/pkgRedirects/inteldpcpp-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/IntelDPCPPConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/inteldpcpp-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/simulations/tools/java/jdk-22.0.2/IntelDPCPPConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/simulations/tools/java/jdk-22.0.2/inteldpcpp-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/didomenico/local/go/IntelDPCPPConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/didomenico/local/go/inteldpcpp-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/didomenico/.local/IntelDPCPPConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/didomenico/.local/inteldpcpp-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/didomenico/.nvm/versions/node/v25.0.0/IntelDPCPPConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/didomenico/.nvm/versions/node/v25.0.0/inteldpcpp-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/local/IntelDPCPPConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/local/inteldpcpp-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/IntelDPCPPConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/inteldpcpp-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/IntelDPCPPConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/inteldpcpp-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/games/IntelDPCPPConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/games/inteldpcpp-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/local/games/IntelDPCPPConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/local/games/inteldpcpp-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/snap/IntelDPCPPConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/snap/inteldpcpp-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/IntelDPCPPConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/inteldpcpp-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+    found: null
+    search_context:
+      ENV{PATH}:
+        - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/bin"
+        - "/home/simulations/tools/java/jdk-22.0.2/bin"
+        - "/home/didomenico/local/go/bin"
+        - "/home/didomenico/.local/bin"
+        - "/home/simulations/tools/java/jdk-22.0.2/bin"
+        - "/home/didomenico/local/go/bin"
+        - "/home/didomenico/.nvm/versions/node/v25.0.0/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "cmake_modules/FindYamlCpp.cmake:29 (find_path)"
+      - "CMakeLists.txt:62 (find_package)"
+    mode: "path"
+    variable: "YAMLCPP_INCLUDE_DIR"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "yaml-cpp/yaml.h"
+    candidate_directories:
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/bin/include/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/bin/"
+      - "/home/simulations/tools/java/jdk-22.0.2/bin/include/"
+      - "/home/simulations/tools/java/jdk-22.0.2/bin/"
+      - "/home/didomenico/local/go/bin/include/"
+      - "/home/didomenico/local/go/bin/"
+      - "/home/didomenico/.local/bin/include/"
+      - "/home/didomenico/.local/bin/"
+      - "/home/didomenico/.nvm/versions/node/v25.0.0/bin/include/"
+      - "/home/didomenico/.nvm/versions/node/v25.0.0/bin/"
+      - "/usr/local/sbin/include/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/include/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/include/"
+      - "/usr/sbin/"
+      - "/usr/bin/include/"
+      - "/usr/bin/"
+      - "/sbin/include/"
+      - "/sbin/"
+      - "/bin/include/"
+      - "/bin/"
+      - "/usr/games/include/"
+      - "/usr/games/"
+      - "/usr/local/games/include/"
+      - "/usr/local/games/"
+      - "/snap/bin/include/"
+      - "/snap/bin/"
+      - "/usr/local/include/x86_64-linux-gnu/include/"
+      - "/usr/local/include/x86_64-linux-gnu/"
+      - "/usr/local/include/include/"
+      - "/usr/local/include/"
+      - "/usr/local/include/"
+      - "/usr/local/"
+      - "/usr/include/x86_64-linux-gnu/include/"
+      - "/usr/include/x86_64-linux-gnu/"
+      - "/usr/include/include/"
+      - "/usr/include/"
+      - "/usr/include/"
+      - "/usr/"
+      - "/include/x86_64-linux-gnu/include/"
+      - "/include/x86_64-linux-gnu/"
+      - "/include/include/"
+      - "/include/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/include/x86_64-linux-gnu/include/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/include/x86_64-linux-gnu/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/include/include/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/include/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/include/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/"
+      - "/usr/X11R6/include/x86_64-linux-gnu/include/"
+      - "/usr/X11R6/include/x86_64-linux-gnu/"
+      - "/usr/X11R6/include/include/"
+      - "/usr/X11R6/include/"
+      - "/usr/X11R6/include/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/include/x86_64-linux-gnu/include/"
+      - "/usr/pkg/include/x86_64-linux-gnu/"
+      - "/usr/pkg/include/include/"
+      - "/usr/pkg/include/"
+      - "/usr/pkg/include/"
+      - "/usr/pkg/"
+      - "/opt/include/x86_64-linux-gnu/include/"
+      - "/opt/include/x86_64-linux-gnu/"
+      - "/opt/include/include/"
+      - "/opt/include/"
+      - "/opt/include/"
+      - "/opt/"
+      - "/usr/include/X11/include/"
+      - "/usr/include/X11/"
+      - "/home/didomenico/fertjs/dependencies/yaml-cpp-0.5.1/include/include/"
+      - "/home/didomenico/fertjs/dependencies/yaml-cpp-0.5.1/include/"
+      - "/home/didomenico/Library/Frameworks/yaml-cpp/include/include/"
+      - "/home/didomenico/Library/Frameworks/yaml-cpp/include/"
+      - "/Library/Frameworks/yaml-cpp/include/include/"
+      - "/Library/Frameworks/yaml-cpp/include/"
+      - "/usr/local/include/include/"
+      - "/usr/local/include/"
+      - "/usr/include/include/"
+      - "/usr/include/"
+      - "/sw/yaml-cpp/include/"
+      - "/sw/yaml-cpp/"
+      - "/opt/local/yaml-cpp/include/"
+      - "/opt/local/yaml-cpp/"
+      - "/opt/csw/yaml-cpp/include/"
+      - "/opt/csw/yaml-cpp/"
+      - "/opt/yaml-cpp/include/"
+      - "/opt/yaml-cpp/"
+    searched_directories:
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/bin/include/yaml-cpp/yaml.h"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/bin/yaml-cpp/yaml.h"
+      - "/home/simulations/tools/java/jdk-22.0.2/bin/include/yaml-cpp/yaml.h"
+      - "/home/simulations/tools/java/jdk-22.0.2/bin/yaml-cpp/yaml.h"
+      - "/home/didomenico/local/go/bin/include/yaml-cpp/yaml.h"
+      - "/home/didomenico/local/go/bin/yaml-cpp/yaml.h"
+      - "/home/didomenico/.local/bin/include/yaml-cpp/yaml.h"
+      - "/home/didomenico/.local/bin/yaml-cpp/yaml.h"
+      - "/home/didomenico/.nvm/versions/node/v25.0.0/bin/include/yaml-cpp/yaml.h"
+      - "/home/didomenico/.nvm/versions/node/v25.0.0/bin/yaml-cpp/yaml.h"
+      - "/usr/local/sbin/include/yaml-cpp/yaml.h"
+      - "/usr/local/sbin/yaml-cpp/yaml.h"
+      - "/usr/local/bin/include/yaml-cpp/yaml.h"
+      - "/usr/local/bin/yaml-cpp/yaml.h"
+      - "/usr/sbin/include/yaml-cpp/yaml.h"
+      - "/usr/sbin/yaml-cpp/yaml.h"
+      - "/usr/bin/include/yaml-cpp/yaml.h"
+      - "/usr/bin/yaml-cpp/yaml.h"
+      - "/sbin/include/yaml-cpp/yaml.h"
+      - "/sbin/yaml-cpp/yaml.h"
+      - "/bin/include/yaml-cpp/yaml.h"
+      - "/bin/yaml-cpp/yaml.h"
+      - "/usr/games/include/yaml-cpp/yaml.h"
+      - "/usr/games/yaml-cpp/yaml.h"
+      - "/usr/local/games/include/yaml-cpp/yaml.h"
+      - "/usr/local/games/yaml-cpp/yaml.h"
+      - "/snap/bin/include/yaml-cpp/yaml.h"
+      - "/snap/bin/yaml-cpp/yaml.h"
+      - "/usr/local/include/x86_64-linux-gnu/include/yaml-cpp/yaml.h"
+      - "/usr/local/include/x86_64-linux-gnu/yaml-cpp/yaml.h"
+      - "/usr/local/include/include/yaml-cpp/yaml.h"
+      - "/usr/local/include/yaml-cpp/yaml.h"
+      - "/usr/local/include/yaml-cpp/yaml.h"
+      - "/usr/local/yaml-cpp/yaml.h"
+      - "/usr/include/x86_64-linux-gnu/include/yaml-cpp/yaml.h"
+      - "/usr/include/x86_64-linux-gnu/yaml-cpp/yaml.h"
+      - "/usr/include/include/yaml-cpp/yaml.h"
+    found: "/usr/include/"
+    search_context:
+      ENV{PATH}:
+        - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/bin"
+        - "/home/simulations/tools/java/jdk-22.0.2/bin"
+        - "/home/didomenico/local/go/bin"
+        - "/home/didomenico/.local/bin"
+        - "/home/simulations/tools/java/jdk-22.0.2/bin"
+        - "/home/didomenico/local/go/bin"
+        - "/home/didomenico/.nvm/versions/node/v25.0.0/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_INCLUDE_PATH:
+        - "/usr/include/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "cmake_modules/FindYamlCpp.cmake:44 (find_library)"
+      - "CMakeLists.txt:62 (find_package)"
+    mode: "library"
+    variable: "YAMLCPP_LIBRARY_RELEASE"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "yaml-cpp"
+      - "libyaml-cppmd.lib"
+      - "libyaml-cppmt.lib"
+    candidate_directories:
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/bin/lib64/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/bin/lib/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/bin/Release/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/bin/RelWithDebInfo/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/bin/"
+      - "/home/simulations/tools/java/jdk-22.0.2/bin/lib64/"
+      - "/home/simulations/tools/java/jdk-22.0.2/bin/lib/"
+      - "/home/simulations/tools/java/jdk-22.0.2/bin/Release/"
+      - "/home/simulations/tools/java/jdk-22.0.2/bin/RelWithDebInfo/"
+      - "/home/simulations/tools/java/jdk-22.0.2/bin/"
+      - "/home/didomenico/local/go/bin/lib64/"
+      - "/home/didomenico/local/go/bin/lib/"
+      - "/home/didomenico/local/go/bin/Release/"
+      - "/home/didomenico/local/go/bin/RelWithDebInfo/"
+      - "/home/didomenico/local/go/bin/"
+      - "/home/didomenico/.local/bin/lib64/"
+      - "/home/didomenico/.local/bin/lib/"
+      - "/home/didomenico/.local/bin/Release/"
+      - "/home/didomenico/.local/bin/RelWithDebInfo/"
+      - "/home/didomenico/.local/bin/"
+      - "/home/didomenico/.nvm/versions/node/v25.0.0/bin/lib64/"
+      - "/home/didomenico/.nvm/versions/node/v25.0.0/bin/lib/"
+      - "/home/didomenico/.nvm/versions/node/v25.0.0/bin/Release/"
+      - "/home/didomenico/.nvm/versions/node/v25.0.0/bin/RelWithDebInfo/"
+      - "/home/didomenico/.nvm/versions/node/v25.0.0/bin/"
+      - "/usr/local/sbin/lib64/"
+      - "/usr/local/sbin/lib/"
+      - "/usr/local/sbin/Release/"
+      - "/usr/local/sbin/RelWithDebInfo/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/lib64/"
+      - "/usr/local/bin/lib/"
+      - "/usr/local/bin/Release/"
+      - "/usr/local/bin/RelWithDebInfo/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/lib64/"
+      - "/usr/sbin/lib/"
+      - "/usr/sbin/Release/"
+      - "/usr/sbin/RelWithDebInfo/"
+      - "/usr/sbin/"
+      - "/usr/bin/lib64/"
+      - "/usr/bin/lib/"
+      - "/usr/bin/Release/"
+      - "/usr/bin/RelWithDebInfo/"
+      - "/usr/bin/"
+      - "/sbin/lib64/"
+      - "/sbin/lib/"
+      - "/sbin/Release/"
+      - "/sbin/RelWithDebInfo/"
+      - "/sbin/"
+      - "/bin/lib64/"
+      - "/bin/lib/"
+      - "/bin/Release/"
+      - "/bin/RelWithDebInfo/"
+      - "/bin/"
+      - "/usr/games/lib64/"
+      - "/usr/games/lib/"
+      - "/usr/games/Release/"
+      - "/usr/games/RelWithDebInfo/"
+      - "/usr/games/"
+      - "/usr/local/games/lib64/"
+      - "/usr/local/games/lib/"
+      - "/usr/local/games/Release/"
+      - "/usr/local/games/RelWithDebInfo/"
+      - "/usr/local/games/"
+      - "/snap/bin/lib64/"
+      - "/snap/bin/lib/"
+      - "/snap/bin/Release/"
+      - "/snap/bin/RelWithDebInfo/"
+      - "/snap/bin/"
+      - "/usr/local/lib/x86_64-linux-gnu/lib64/"
+      - "/usr/local/lib/x86_64-linux-gnu/lib/"
+      - "/usr/local/lib/x86_64-linux-gnu/Release/"
+      - "/usr/local/lib/x86_64-linux-gnu/RelWithDebInfo/"
+      - "/usr/local/lib/x86_64-linux-gnu/"
+      - "/usr/local/lib/lib64/"
+      - "/usr/local/lib/lib/"
+      - "/usr/local/lib/Release/"
+      - "/usr/local/lib/RelWithDebInfo/"
+      - "/usr/local/lib/"
+      - "/usr/local/lib64/"
+      - "/usr/local/lib/"
+      - "/usr/local/Release/"
+      - "/usr/local/RelWithDebInfo/"
+      - "/usr/local/"
+      - "/usr/lib/x86_64-linux-gnu/lib64/"
+      - "/usr/lib/x86_64-linux-gnu/lib/"
+      - "/usr/lib/x86_64-linux-gnu/Release/"
+      - "/usr/lib/x86_64-linux-gnu/RelWithDebInfo/"
+      - "/usr/lib/x86_64-linux-gnu/"
+      - "/usr/lib/lib64/"
+      - "/usr/lib/lib/"
+      - "/usr/lib/Release/"
+      - "/usr/lib/RelWithDebInfo/"
+      - "/usr/lib/"
+      - "/usr/lib64/"
+      - "/usr/lib/"
+      - "/usr/Release/"
+      - "/usr/RelWithDebInfo/"
+      - "/usr/"
+      - "/lib/x86_64-linux-gnu/lib64/"
+      - "/lib/x86_64-linux-gnu/lib/"
+      - "/lib/x86_64-linux-gnu/Release/"
+      - "/lib/x86_64-linux-gnu/RelWithDebInfo/"
+      - "/lib/x86_64-linux-gnu/"
+      - "/lib/lib64/"
+      - "/lib/lib/"
+      - "/lib/Release/"
+      - "/lib/RelWithDebInfo/"
+      - "/lib/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/lib/x86_64-linux-gnu/lib64/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/lib/x86_64-linux-gnu/lib/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/lib/x86_64-linux-gnu/Release/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/lib/x86_64-linux-gnu/RelWithDebInfo/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/lib/x86_64-linux-gnu/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/lib/lib64/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/lib/lib/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/lib/Release/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/lib/RelWithDebInfo/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/lib/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/lib64/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/lib/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/Release/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/RelWithDebInfo/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/"
+      - "/usr/X11R6/lib/x86_64-linux-gnu/lib64/"
+      - "/usr/X11R6/lib/x86_64-linux-gnu/lib/"
+      - "/usr/X11R6/lib/x86_64-linux-gnu/Release/"
+      - "/usr/X11R6/lib/x86_64-linux-gnu/RelWithDebInfo/"
+      - "/usr/X11R6/lib/x86_64-linux-gnu/"
+      - "/usr/X11R6/lib/lib64/"
+      - "/usr/X11R6/lib/lib/"
+      - "/usr/X11R6/lib/Release/"
+      - "/usr/X11R6/lib/RelWithDebInfo/"
+      - "/usr/X11R6/lib/"
+      - "/usr/X11R6/lib64/"
+      - "/usr/X11R6/lib/"
+      - "/usr/X11R6/Release/"
+      - "/usr/X11R6/RelWithDebInfo/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/lib/x86_64-linux-gnu/lib64/"
+      - "/usr/pkg/lib/x86_64-linux-gnu/lib/"
+      - "/usr/pkg/lib/x86_64-linux-gnu/Release/"
+      - "/usr/pkg/lib/x86_64-linux-gnu/RelWithDebInfo/"
+      - "/usr/pkg/lib/x86_64-linux-gnu/"
+      - "/usr/pkg/lib/lib64/"
+      - "/usr/pkg/lib/lib/"
+      - "/usr/pkg/lib/Release/"
+      - "/usr/pkg/lib/RelWithDebInfo/"
+      - "/usr/pkg/lib/"
+      - "/usr/pkg/lib64/"
+      - "/usr/pkg/lib/"
+      - "/usr/pkg/Release/"
+      - "/usr/pkg/RelWithDebInfo/"
+      - "/usr/pkg/"
+      - "/opt/lib/x86_64-linux-gnu/lib64/"
+      - "/opt/lib/x86_64-linux-gnu/lib/"
+      - "/opt/lib/x86_64-linux-gnu/Release/"
+      - "/opt/lib/x86_64-linux-gnu/RelWithDebInfo/"
+      - "/opt/lib/x86_64-linux-gnu/"
+      - "/opt/lib/lib64/"
+      - "/opt/lib/lib/"
+      - "/opt/lib/Release/"
+      - "/opt/lib/RelWithDebInfo/"
+      - "/opt/lib/"
+      - "/opt/lib64/"
+      - "/opt/lib/"
+      - "/opt/Release/"
+      - "/opt/RelWithDebInfo/"
+      - "/opt/"
+      - "/usr/lib/X11/lib64/"
+      - "/usr/lib/X11/lib/"
+      - "/usr/lib/X11/Release/"
+      - "/usr/lib/X11/RelWithDebInfo/"
+      - "/usr/lib/X11/"
+      - "/home/didomenico/fertjs/dependencies/yaml-cpp-0.5.1/lib64/"
+      - "/home/didomenico/fertjs/dependencies/yaml-cpp-0.5.1/lib/"
+      - "/home/didomenico/fertjs/dependencies/yaml-cpp-0.5.1/Release/"
+      - "/home/didomenico/fertjs/dependencies/yaml-cpp-0.5.1/RelWithDebInfo/"
+      - "/home/didomenico/fertjs/dependencies/yaml-cpp-0.5.1/"
+      - "/home/didomenico/fertjs/dependencies/yaml-cpp-0.5.1/build/lib64/"
+      - "/home/didomenico/fertjs/dependencies/yaml-cpp-0.5.1/build/lib/"
+      - "/home/didomenico/fertjs/dependencies/yaml-cpp-0.5.1/build/Release/"
+      - "/home/didomenico/fertjs/dependencies/yaml-cpp-0.5.1/build/RelWithDebInfo/"
+      - "/home/didomenico/fertjs/dependencies/yaml-cpp-0.5.1/build/"
+      - "/home/didomenico/Library/Frameworks/lib64/"
+      - "/home/didomenico/Library/Frameworks/lib/"
+      - "/home/didomenico/Library/Frameworks/Release/"
+      - "/home/didomenico/Library/Frameworks/RelWithDebInfo/"
+      - "/home/didomenico/Library/Frameworks/"
+      - "/Library/Frameworks/lib64/"
+      - "/Library/Frameworks/lib/"
+      - "/Library/Frameworks/Release/"
+      - "/Library/Frameworks/RelWithDebInfo/"
+      - "/Library/Frameworks/"
+      - "/usr/local/lib64/"
+      - "/usr/local/lib/"
+      - "/usr/local/Release/"
+      - "/usr/local/RelWithDebInfo/"
+      - "/usr/local/"
+      - "/usr/lib64/"
+      - "/usr/lib/"
+      - "/usr/Release/"
+      - "/usr/RelWithDebInfo/"
+      - "/usr/"
+      - "/sw/lib64/"
+      - "/sw/lib/"
+      - "/sw/Release/"
+      - "/sw/RelWithDebInfo/"
+      - "/sw/"
+      - "/opt/local/lib64/"
+      - "/opt/local/lib/"
+      - "/opt/local/Release/"
+      - "/opt/local/RelWithDebInfo/"
+      - "/opt/local/"
+      - "/opt/csw/lib64/"
+      - "/opt/csw/lib/"
+      - "/opt/csw/Release/"
+      - "/opt/csw/RelWithDebInfo/"
+      - "/opt/csw/"
+      - "/opt/lib64/"
+      - "/opt/lib/"
+      - "/opt/Release/"
+      - "/opt/RelWithDebInfo/"
+      - "/opt/"
+    searched_directories:
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/bin/lib64/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/bin/lib/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/bin/Release/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/bin/RelWithDebInfo/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/bin/"
+      - "/home/simulations/tools/java/jdk-22.0.2/bin/lib64/"
+      - "/home/simulations/tools/java/jdk-22.0.2/bin/lib/"
+      - "/home/simulations/tools/java/jdk-22.0.2/bin/Release/"
+      - "/home/simulations/tools/java/jdk-22.0.2/bin/RelWithDebInfo/"
+      - "/home/simulations/tools/java/jdk-22.0.2/bin/"
+      - "/home/didomenico/local/go/bin/lib64/"
+      - "/home/didomenico/local/go/bin/lib/"
+      - "/home/didomenico/local/go/bin/Release/"
+      - "/home/didomenico/local/go/bin/RelWithDebInfo/"
+      - "/home/didomenico/local/go/bin/"
+      - "/home/didomenico/.local/bin/lib64/"
+      - "/home/didomenico/.local/bin/lib/"
+      - "/home/didomenico/.local/bin/Release/"
+      - "/home/didomenico/.local/bin/RelWithDebInfo/"
+      - "/home/didomenico/.local/bin/"
+      - "/home/didomenico/.nvm/versions/node/v25.0.0/bin/lib64/"
+      - "/home/didomenico/.nvm/versions/node/v25.0.0/bin/lib/"
+      - "/home/didomenico/.nvm/versions/node/v25.0.0/bin/Release/"
+      - "/home/didomenico/.nvm/versions/node/v25.0.0/bin/RelWithDebInfo/"
+      - "/home/didomenico/.nvm/versions/node/v25.0.0/bin/"
+      - "/usr/local/sbin/lib64/"
+      - "/usr/local/sbin/lib/"
+      - "/usr/local/sbin/Release/"
+      - "/usr/local/sbin/RelWithDebInfo/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/lib64/"
+      - "/usr/local/bin/lib/"
+      - "/usr/local/bin/Release/"
+      - "/usr/local/bin/RelWithDebInfo/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/lib64/"
+      - "/usr/sbin/lib/"
+      - "/usr/sbin/Release/"
+      - "/usr/sbin/RelWithDebInfo/"
+      - "/usr/sbin/"
+      - "/usr/bin/lib64/"
+      - "/usr/bin/lib/"
+      - "/usr/bin/Release/"
+      - "/usr/bin/RelWithDebInfo/"
+      - "/usr/bin/"
+      - "/sbin/lib64/"
+      - "/sbin/lib/"
+      - "/sbin/Release/"
+      - "/sbin/RelWithDebInfo/"
+      - "/sbin/"
+      - "/bin/lib64/"
+      - "/bin/lib/"
+      - "/bin/Release/"
+      - "/bin/RelWithDebInfo/"
+      - "/bin/"
+      - "/usr/games/lib64/"
+      - "/usr/games/lib/"
+      - "/usr/games/Release/"
+      - "/usr/games/RelWithDebInfo/"
+      - "/usr/games/"
+      - "/usr/local/games/lib64/"
+      - "/usr/local/games/lib/"
+      - "/usr/local/games/Release/"
+      - "/usr/local/games/RelWithDebInfo/"
+      - "/usr/local/games/"
+      - "/snap/bin/lib64/"
+      - "/snap/bin/lib/"
+      - "/snap/bin/Release/"
+      - "/snap/bin/RelWithDebInfo/"
+      - "/snap/bin/"
+      - "/usr/local/lib/x86_64-linux-gnu/lib64/"
+      - "/usr/local/lib/x86_64-linux-gnu/lib/"
+      - "/usr/local/lib/x86_64-linux-gnu/Release/"
+      - "/usr/local/lib/x86_64-linux-gnu/RelWithDebInfo/"
+      - "/usr/local/lib/x86_64-linux-gnu/"
+      - "/usr/local/lib/lib64/"
+      - "/usr/local/lib/lib/"
+      - "/usr/local/lib/Release/"
+      - "/usr/local/lib/RelWithDebInfo/"
+      - "/usr/local/lib/"
+      - "/usr/local/lib64/"
+      - "/usr/local/lib/"
+      - "/usr/local/Release/"
+      - "/usr/local/RelWithDebInfo/"
+      - "/usr/local/"
+      - "/usr/lib/x86_64-linux-gnu/lib64/"
+      - "/usr/lib/x86_64-linux-gnu/lib/"
+      - "/usr/lib/x86_64-linux-gnu/Release/"
+      - "/usr/lib/x86_64-linux-gnu/RelWithDebInfo/"
+    found: "/usr/lib/x86_64-linux-gnu/libyaml-cpp.so"
+    search_context:
+      ENV{PATH}:
+        - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/bin"
+        - "/home/simulations/tools/java/jdk-22.0.2/bin"
+        - "/home/didomenico/local/go/bin"
+        - "/home/didomenico/.local/bin"
+        - "/home/simulations/tools/java/jdk-22.0.2/bin"
+        - "/home/didomenico/local/go/bin"
+        - "/home/didomenico/.nvm/versions/node/v25.0.0/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "cmake_modules/FindYamlCpp.cmake:60 (find_library)"
+      - "CMakeLists.txt:62 (find_package)"
+    mode: "library"
+    variable: "YAMLCPP_LIBRARY_DEBUG"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "yaml-cpp-dbg"
+      - "libyaml-cppmdd.lib"
+      - "libyaml-cppmtd.lib"
+    candidate_directories:
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/bin/lib64/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/bin/lib/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/bin/Debug/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/bin/"
+      - "/home/simulations/tools/java/jdk-22.0.2/bin/lib64/"
+      - "/home/simulations/tools/java/jdk-22.0.2/bin/lib/"
+      - "/home/simulations/tools/java/jdk-22.0.2/bin/Debug/"
+      - "/home/simulations/tools/java/jdk-22.0.2/bin/"
+      - "/home/didomenico/local/go/bin/lib64/"
+      - "/home/didomenico/local/go/bin/lib/"
+      - "/home/didomenico/local/go/bin/Debug/"
+      - "/home/didomenico/local/go/bin/"
+      - "/home/didomenico/.local/bin/lib64/"
+      - "/home/didomenico/.local/bin/lib/"
+      - "/home/didomenico/.local/bin/Debug/"
+      - "/home/didomenico/.local/bin/"
+      - "/home/didomenico/.nvm/versions/node/v25.0.0/bin/lib64/"
+      - "/home/didomenico/.nvm/versions/node/v25.0.0/bin/lib/"
+      - "/home/didomenico/.nvm/versions/node/v25.0.0/bin/Debug/"
+      - "/home/didomenico/.nvm/versions/node/v25.0.0/bin/"
+      - "/usr/local/sbin/lib64/"
+      - "/usr/local/sbin/lib/"
+      - "/usr/local/sbin/Debug/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/lib64/"
+      - "/usr/local/bin/lib/"
+      - "/usr/local/bin/Debug/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/lib64/"
+      - "/usr/sbin/lib/"
+      - "/usr/sbin/Debug/"
+      - "/usr/sbin/"
+      - "/usr/bin/lib64/"
+      - "/usr/bin/lib/"
+      - "/usr/bin/Debug/"
+      - "/usr/bin/"
+      - "/sbin/lib64/"
+      - "/sbin/lib/"
+      - "/sbin/Debug/"
+      - "/sbin/"
+      - "/bin/lib64/"
+      - "/bin/lib/"
+      - "/bin/Debug/"
+      - "/bin/"
+      - "/usr/games/lib64/"
+      - "/usr/games/lib/"
+      - "/usr/games/Debug/"
+      - "/usr/games/"
+      - "/usr/local/games/lib64/"
+      - "/usr/local/games/lib/"
+      - "/usr/local/games/Debug/"
+      - "/usr/local/games/"
+      - "/snap/bin/lib64/"
+      - "/snap/bin/lib/"
+      - "/snap/bin/Debug/"
+      - "/snap/bin/"
+      - "/usr/local/lib/x86_64-linux-gnu/lib64/"
+      - "/usr/local/lib/x86_64-linux-gnu/lib/"
+      - "/usr/local/lib/x86_64-linux-gnu/Debug/"
+      - "/usr/local/lib/x86_64-linux-gnu/"
+      - "/usr/local/lib/lib64/"
+      - "/usr/local/lib/lib/"
+      - "/usr/local/lib/Debug/"
+      - "/usr/local/lib/"
+      - "/usr/local/lib64/"
+      - "/usr/local/lib/"
+      - "/usr/local/Debug/"
+      - "/usr/local/"
+      - "/usr/lib/x86_64-linux-gnu/lib64/"
+      - "/usr/lib/x86_64-linux-gnu/lib/"
+      - "/usr/lib/x86_64-linux-gnu/Debug/"
+      - "/usr/lib/x86_64-linux-gnu/"
+      - "/usr/lib/lib64/"
+      - "/usr/lib/lib/"
+      - "/usr/lib/Debug/"
+      - "/usr/lib/"
+      - "/usr/lib64/"
+      - "/usr/lib/"
+      - "/usr/Debug/"
+      - "/usr/"
+      - "/lib/x86_64-linux-gnu/lib64/"
+      - "/lib/x86_64-linux-gnu/lib/"
+      - "/lib/x86_64-linux-gnu/Debug/"
+      - "/lib/x86_64-linux-gnu/"
+      - "/lib/lib64/"
+      - "/lib/lib/"
+      - "/lib/Debug/"
+      - "/lib/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/lib/x86_64-linux-gnu/lib64/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/lib/x86_64-linux-gnu/lib/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/lib/x86_64-linux-gnu/Debug/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/lib/x86_64-linux-gnu/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/lib/lib64/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/lib/lib/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/lib/Debug/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/lib/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/lib64/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/lib/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/Debug/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/"
+      - "/usr/X11R6/lib/x86_64-linux-gnu/lib64/"
+      - "/usr/X11R6/lib/x86_64-linux-gnu/lib/"
+      - "/usr/X11R6/lib/x86_64-linux-gnu/Debug/"
+      - "/usr/X11R6/lib/x86_64-linux-gnu/"
+      - "/usr/X11R6/lib/lib64/"
+      - "/usr/X11R6/lib/lib/"
+      - "/usr/X11R6/lib/Debug/"
+      - "/usr/X11R6/lib/"
+      - "/usr/X11R6/lib64/"
+      - "/usr/X11R6/lib/"
+      - "/usr/X11R6/Debug/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/lib/x86_64-linux-gnu/lib64/"
+      - "/usr/pkg/lib/x86_64-linux-gnu/lib/"
+      - "/usr/pkg/lib/x86_64-linux-gnu/Debug/"
+      - "/usr/pkg/lib/x86_64-linux-gnu/"
+      - "/usr/pkg/lib/lib64/"
+      - "/usr/pkg/lib/lib/"
+      - "/usr/pkg/lib/Debug/"
+      - "/usr/pkg/lib/"
+      - "/usr/pkg/lib64/"
+      - "/usr/pkg/lib/"
+      - "/usr/pkg/Debug/"
+      - "/usr/pkg/"
+      - "/opt/lib/x86_64-linux-gnu/lib64/"
+      - "/opt/lib/x86_64-linux-gnu/lib/"
+      - "/opt/lib/x86_64-linux-gnu/Debug/"
+      - "/opt/lib/x86_64-linux-gnu/"
+      - "/opt/lib/lib64/"
+      - "/opt/lib/lib/"
+      - "/opt/lib/Debug/"
+      - "/opt/lib/"
+      - "/opt/lib64/"
+      - "/opt/lib/"
+      - "/opt/Debug/"
+      - "/opt/"
+      - "/usr/lib/X11/lib64/"
+      - "/usr/lib/X11/lib/"
+      - "/usr/lib/X11/Debug/"
+      - "/usr/lib/X11/"
+      - "/home/didomenico/fertjs/dependencies/yaml-cpp-0.5.1/lib64/"
+      - "/home/didomenico/fertjs/dependencies/yaml-cpp-0.5.1/lib/"
+      - "/home/didomenico/fertjs/dependencies/yaml-cpp-0.5.1/Debug/"
+      - "/home/didomenico/fertjs/dependencies/yaml-cpp-0.5.1/"
+      - "/home/didomenico/fertjs/dependencies/yaml-cpp-0.5.1/build/lib64/"
+      - "/home/didomenico/fertjs/dependencies/yaml-cpp-0.5.1/build/lib/"
+      - "/home/didomenico/fertjs/dependencies/yaml-cpp-0.5.1/build/Debug/"
+      - "/home/didomenico/fertjs/dependencies/yaml-cpp-0.5.1/build/"
+      - "/home/didomenico/Library/Frameworks/lib64/"
+      - "/home/didomenico/Library/Frameworks/lib/"
+      - "/home/didomenico/Library/Frameworks/Debug/"
+      - "/home/didomenico/Library/Frameworks/"
+      - "/Library/Frameworks/lib64/"
+      - "/Library/Frameworks/lib/"
+      - "/Library/Frameworks/Debug/"
+      - "/Library/Frameworks/"
+      - "/usr/local/lib64/"
+      - "/usr/local/lib/"
+      - "/usr/local/Debug/"
+      - "/usr/local/"
+      - "/usr/lib64/"
+      - "/usr/lib/"
+      - "/usr/Debug/"
+      - "/usr/"
+      - "/sw/lib64/"
+      - "/sw/lib/"
+      - "/sw/Debug/"
+      - "/sw/"
+      - "/opt/local/lib64/"
+      - "/opt/local/lib/"
+      - "/opt/local/Debug/"
+      - "/opt/local/"
+      - "/opt/csw/lib64/"
+      - "/opt/csw/lib/"
+      - "/opt/csw/Debug/"
+      - "/opt/csw/"
+      - "/opt/lib64/"
+      - "/opt/lib/"
+      - "/opt/Debug/"
+      - "/opt/"
+    searched_directories:
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/bin/lib64/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/bin/lib/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/bin/Debug/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/bin/"
+      - "/home/simulations/tools/java/jdk-22.0.2/bin/lib64/"
+      - "/home/simulations/tools/java/jdk-22.0.2/bin/lib/"
+      - "/home/simulations/tools/java/jdk-22.0.2/bin/Debug/"
+      - "/home/simulations/tools/java/jdk-22.0.2/bin/"
+      - "/home/didomenico/local/go/bin/lib64/"
+      - "/home/didomenico/local/go/bin/lib/"
+      - "/home/didomenico/local/go/bin/Debug/"
+      - "/home/didomenico/local/go/bin/"
+      - "/home/didomenico/.local/bin/lib64/"
+      - "/home/didomenico/.local/bin/lib/"
+      - "/home/didomenico/.local/bin/Debug/"
+      - "/home/didomenico/.local/bin/"
+      - "/home/didomenico/.nvm/versions/node/v25.0.0/bin/lib64/"
+      - "/home/didomenico/.nvm/versions/node/v25.0.0/bin/lib/"
+      - "/home/didomenico/.nvm/versions/node/v25.0.0/bin/Debug/"
+      - "/home/didomenico/.nvm/versions/node/v25.0.0/bin/"
+      - "/usr/local/sbin/lib64/"
+      - "/usr/local/sbin/lib/"
+      - "/usr/local/sbin/Debug/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/lib64/"
+      - "/usr/local/bin/lib/"
+      - "/usr/local/bin/Debug/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/lib64/"
+      - "/usr/sbin/lib/"
+      - "/usr/sbin/Debug/"
+      - "/usr/sbin/"
+      - "/usr/bin/lib64/"
+      - "/usr/bin/lib/"
+      - "/usr/bin/Debug/"
+      - "/usr/bin/"
+      - "/sbin/lib64/"
+      - "/sbin/lib/"
+      - "/sbin/Debug/"
+      - "/sbin/"
+      - "/bin/lib64/"
+      - "/bin/lib/"
+      - "/bin/Debug/"
+      - "/bin/"
+      - "/usr/games/lib64/"
+      - "/usr/games/lib/"
+      - "/usr/games/Debug/"
+      - "/usr/games/"
+      - "/usr/local/games/lib64/"
+      - "/usr/local/games/lib/"
+      - "/usr/local/games/Debug/"
+      - "/usr/local/games/"
+      - "/snap/bin/lib64/"
+      - "/snap/bin/lib/"
+      - "/snap/bin/Debug/"
+      - "/snap/bin/"
+      - "/usr/local/lib/x86_64-linux-gnu/lib64/"
+      - "/usr/local/lib/x86_64-linux-gnu/lib/"
+      - "/usr/local/lib/x86_64-linux-gnu/Debug/"
+      - "/usr/local/lib/x86_64-linux-gnu/"
+      - "/usr/local/lib/lib64/"
+      - "/usr/local/lib/lib/"
+      - "/usr/local/lib/Debug/"
+      - "/usr/local/lib/"
+      - "/usr/local/lib64/"
+      - "/usr/local/lib/"
+      - "/usr/local/Debug/"
+      - "/usr/local/"
+      - "/usr/lib/x86_64-linux-gnu/lib64/"
+      - "/usr/lib/x86_64-linux-gnu/lib/"
+      - "/usr/lib/x86_64-linux-gnu/Debug/"
+      - "/usr/lib/x86_64-linux-gnu/"
+      - "/usr/lib/lib64/"
+      - "/usr/lib/lib/"
+      - "/usr/lib/Debug/"
+      - "/usr/lib/"
+      - "/usr/lib64/"
+      - "/usr/lib/"
+      - "/usr/Debug/"
+      - "/usr/"
+      - "/lib/x86_64-linux-gnu/lib64/"
+      - "/lib/x86_64-linux-gnu/lib/"
+      - "/lib/x86_64-linux-gnu/Debug/"
+      - "/lib/x86_64-linux-gnu/"
+      - "/lib/lib64/"
+      - "/lib/lib/"
+      - "/lib/Debug/"
+      - "/lib/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/lib/x86_64-linux-gnu/lib64/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/lib/x86_64-linux-gnu/lib/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/lib/x86_64-linux-gnu/Debug/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/lib/x86_64-linux-gnu/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/lib/lib64/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/lib/lib/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/lib/Debug/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/lib/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/lib64/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/lib/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/Debug/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/"
+      - "/usr/X11R6/lib/x86_64-linux-gnu/lib64/"
+      - "/usr/X11R6/lib/x86_64-linux-gnu/lib/"
+      - "/usr/X11R6/lib/x86_64-linux-gnu/Debug/"
+      - "/usr/X11R6/lib/x86_64-linux-gnu/"
+      - "/usr/X11R6/lib/lib64/"
+      - "/usr/X11R6/lib/lib/"
+      - "/usr/X11R6/lib/Debug/"
+      - "/usr/X11R6/lib/"
+      - "/usr/X11R6/lib64/"
+      - "/usr/X11R6/lib/"
+      - "/usr/X11R6/Debug/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/lib/x86_64-linux-gnu/lib64/"
+      - "/usr/pkg/lib/x86_64-linux-gnu/lib/"
+      - "/usr/pkg/lib/x86_64-linux-gnu/Debug/"
+      - "/usr/pkg/lib/x86_64-linux-gnu/"
+      - "/usr/pkg/lib/lib64/"
+      - "/usr/pkg/lib/lib/"
+      - "/usr/pkg/lib/Debug/"
+      - "/usr/pkg/lib/"
+      - "/usr/pkg/lib64/"
+      - "/usr/pkg/lib/"
+      - "/usr/pkg/Debug/"
+      - "/usr/pkg/"
+      - "/opt/lib/x86_64-linux-gnu/lib64/"
+      - "/opt/lib/x86_64-linux-gnu/lib/"
+      - "/opt/lib/x86_64-linux-gnu/Debug/"
+      - "/opt/lib/x86_64-linux-gnu/"
+      - "/opt/lib/lib64/"
+      - "/opt/lib/lib/"
+      - "/opt/lib/Debug/"
+      - "/opt/lib/"
+      - "/opt/lib64/"
+      - "/opt/lib/"
+      - "/opt/Debug/"
+      - "/opt/"
+      - "/usr/lib/X11/lib64/"
+      - "/usr/lib/X11/lib/"
+      - "/usr/lib/X11/Debug/"
+      - "/usr/lib/X11/"
+      - "/home/didomenico/fertjs/dependencies/yaml-cpp-0.5.1/lib64/"
+      - "/home/didomenico/fertjs/dependencies/yaml-cpp-0.5.1/lib/"
+      - "/home/didomenico/fertjs/dependencies/yaml-cpp-0.5.1/Debug/"
+      - "/home/didomenico/fertjs/dependencies/yaml-cpp-0.5.1/"
+      - "/home/didomenico/fertjs/dependencies/yaml-cpp-0.5.1/build/lib64/"
+      - "/home/didomenico/fertjs/dependencies/yaml-cpp-0.5.1/build/lib/"
+      - "/home/didomenico/fertjs/dependencies/yaml-cpp-0.5.1/build/Debug/"
+      - "/home/didomenico/fertjs/dependencies/yaml-cpp-0.5.1/build/"
+      - "/home/didomenico/Library/Frameworks/lib64/"
+      - "/home/didomenico/Library/Frameworks/lib/"
+      - "/home/didomenico/Library/Frameworks/Debug/"
+      - "/home/didomenico/Library/Frameworks/"
+      - "/Library/Frameworks/lib64/"
+      - "/Library/Frameworks/lib/"
+      - "/Library/Frameworks/Debug/"
+      - "/Library/Frameworks/"
+      - "/usr/local/lib64/"
+      - "/usr/local/lib/"
+      - "/usr/local/Debug/"
+      - "/usr/local/"
+      - "/usr/lib64/"
+      - "/usr/lib/"
+      - "/usr/Debug/"
+      - "/usr/"
+      - "/sw/lib64/"
+      - "/sw/lib/"
+      - "/sw/Debug/"
+      - "/sw/"
+      - "/opt/local/lib64/"
+      - "/opt/local/lib/"
+      - "/opt/local/Debug/"
+      - "/opt/local/"
+      - "/opt/csw/lib64/"
+      - "/opt/csw/lib/"
+      - "/opt/csw/Debug/"
+      - "/opt/csw/"
+      - "/opt/lib64/"
+      - "/opt/lib/"
+      - "/opt/Debug/"
+      - "/opt/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/bin/lib64/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/bin/lib/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/bin/Debug/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/bin/"
+      - "/home/simulations/tools/java/jdk-22.0.2/bin/lib64/"
+      - "/home/simulations/tools/java/jdk-22.0.2/bin/lib/"
+      - "/home/simulations/tools/java/jdk-22.0.2/bin/Debug/"
+      - "/home/simulations/tools/java/jdk-22.0.2/bin/"
+      - "/home/didomenico/local/go/bin/lib64/"
+      - "/home/didomenico/local/go/bin/lib/"
+      - "/home/didomenico/local/go/bin/Debug/"
+      - "/home/didomenico/local/go/bin/"
+      - "/home/didomenico/.local/bin/lib64/"
+      - "/home/didomenico/.local/bin/lib/"
+      - "/home/didomenico/.local/bin/Debug/"
+      - "/home/didomenico/.local/bin/"
+      - "/home/didomenico/.nvm/versions/node/v25.0.0/bin/lib64/"
+      - "/home/didomenico/.nvm/versions/node/v25.0.0/bin/lib/"
+      - "/home/didomenico/.nvm/versions/node/v25.0.0/bin/Debug/"
+      - "/home/didomenico/.nvm/versions/node/v25.0.0/bin/"
+      - "/usr/local/sbin/lib64/"
+      - "/usr/local/sbin/lib/"
+      - "/usr/local/sbin/Debug/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/lib64/"
+      - "/usr/local/bin/lib/"
+      - "/usr/local/bin/Debug/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/lib64/"
+      - "/usr/sbin/lib/"
+      - "/usr/sbin/Debug/"
+      - "/usr/sbin/"
+      - "/usr/bin/lib64/"
+      - "/usr/bin/lib/"
+      - "/usr/bin/Debug/"
+      - "/usr/bin/"
+      - "/sbin/lib64/"
+      - "/sbin/lib/"
+      - "/sbin/Debug/"
+      - "/sbin/"
+      - "/bin/lib64/"
+      - "/bin/lib/"
+      - "/bin/Debug/"
+      - "/bin/"
+      - "/usr/games/lib64/"
+      - "/usr/games/lib/"
+      - "/usr/games/Debug/"
+      - "/usr/games/"
+      - "/usr/local/games/lib64/"
+      - "/usr/local/games/lib/"
+      - "/usr/local/games/Debug/"
+      - "/usr/local/games/"
+      - "/snap/bin/lib64/"
+      - "/snap/bin/lib/"
+      - "/snap/bin/Debug/"
+      - "/snap/bin/"
+      - "/usr/local/lib/x86_64-linux-gnu/lib64/"
+      - "/usr/local/lib/x86_64-linux-gnu/lib/"
+      - "/usr/local/lib/x86_64-linux-gnu/Debug/"
+      - "/usr/local/lib/x86_64-linux-gnu/"
+      - "/usr/local/lib/lib64/"
+      - "/usr/local/lib/lib/"
+      - "/usr/local/lib/Debug/"
+      - "/usr/local/lib/"
+      - "/usr/local/lib64/"
+      - "/usr/local/lib/"
+      - "/usr/local/Debug/"
+      - "/usr/local/"
+      - "/usr/lib/x86_64-linux-gnu/lib64/"
+      - "/usr/lib/x86_64-linux-gnu/lib/"
+      - "/usr/lib/x86_64-linux-gnu/Debug/"
+      - "/usr/lib/x86_64-linux-gnu/"
+      - "/usr/lib/lib64/"
+      - "/usr/lib/lib/"
+      - "/usr/lib/Debug/"
+      - "/usr/lib/"
+      - "/usr/lib64/"
+      - "/usr/lib/"
+      - "/usr/Debug/"
+      - "/usr/"
+      - "/lib/x86_64-linux-gnu/lib64/"
+      - "/lib/x86_64-linux-gnu/lib/"
+      - "/lib/x86_64-linux-gnu/Debug/"
+      - "/lib/x86_64-linux-gnu/"
+      - "/lib/lib64/"
+      - "/lib/lib/"
+      - "/lib/Debug/"
+      - "/lib/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/lib/x86_64-linux-gnu/lib64/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/lib/x86_64-linux-gnu/lib/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/lib/x86_64-linux-gnu/Debug/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/lib/x86_64-linux-gnu/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/lib/lib64/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/lib/lib/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/lib/Debug/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/lib/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/lib64/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/lib/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/Debug/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/"
+      - "/usr/X11R6/lib/x86_64-linux-gnu/lib64/"
+      - "/usr/X11R6/lib/x86_64-linux-gnu/lib/"
+      - "/usr/X11R6/lib/x86_64-linux-gnu/Debug/"
+      - "/usr/X11R6/lib/x86_64-linux-gnu/"
+      - "/usr/X11R6/lib/lib64/"
+      - "/usr/X11R6/lib/lib/"
+      - "/usr/X11R6/lib/Debug/"
+      - "/usr/X11R6/lib/"
+      - "/usr/X11R6/lib64/"
+      - "/usr/X11R6/lib/"
+      - "/usr/X11R6/Debug/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/lib/x86_64-linux-gnu/lib64/"
+      - "/usr/pkg/lib/x86_64-linux-gnu/lib/"
+      - "/usr/pkg/lib/x86_64-linux-gnu/Debug/"
+      - "/usr/pkg/lib/x86_64-linux-gnu/"
+      - "/usr/pkg/lib/lib64/"
+      - "/usr/pkg/lib/lib/"
+      - "/usr/pkg/lib/Debug/"
+      - "/usr/pkg/lib/"
+      - "/usr/pkg/lib64/"
+      - "/usr/pkg/lib/"
+      - "/usr/pkg/Debug/"
+      - "/usr/pkg/"
+      - "/opt/lib/x86_64-linux-gnu/lib64/"
+      - "/opt/lib/x86_64-linux-gnu/lib/"
+      - "/opt/lib/x86_64-linux-gnu/Debug/"
+      - "/opt/lib/x86_64-linux-gnu/"
+      - "/opt/lib/lib64/"
+      - "/opt/lib/lib/"
+      - "/opt/lib/Debug/"
+      - "/opt/lib/"
+      - "/opt/lib64/"
+      - "/opt/lib/"
+      - "/opt/Debug/"
+      - "/opt/"
+      - "/usr/lib/X11/lib64/"
+      - "/usr/lib/X11/lib/"
+      - "/usr/lib/X11/Debug/"
+      - "/usr/lib/X11/"
+      - "/home/didomenico/fertjs/dependencies/yaml-cpp-0.5.1/lib64/"
+      - "/home/didomenico/fertjs/dependencies/yaml-cpp-0.5.1/lib/"
+      - "/home/didomenico/fertjs/dependencies/yaml-cpp-0.5.1/Debug/"
+      - "/home/didomenico/fertjs/dependencies/yaml-cpp-0.5.1/"
+      - "/home/didomenico/fertjs/dependencies/yaml-cpp-0.5.1/build/lib64/"
+      - "/home/didomenico/fertjs/dependencies/yaml-cpp-0.5.1/build/lib/"
+      - "/home/didomenico/fertjs/dependencies/yaml-cpp-0.5.1/build/Debug/"
+      - "/home/didomenico/fertjs/dependencies/yaml-cpp-0.5.1/build/"
+      - "/home/didomenico/Library/Frameworks/lib64/"
+      - "/home/didomenico/Library/Frameworks/lib/"
+      - "/home/didomenico/Library/Frameworks/Debug/"
+      - "/home/didomenico/Library/Frameworks/"
+      - "/Library/Frameworks/lib64/"
+      - "/Library/Frameworks/lib/"
+      - "/Library/Frameworks/Debug/"
+      - "/Library/Frameworks/"
+      - "/usr/local/lib64/"
+      - "/usr/local/lib/"
+      - "/usr/local/Debug/"
+      - "/usr/local/"
+      - "/usr/lib64/"
+      - "/usr/lib/"
+      - "/usr/Debug/"
+      - "/usr/"
+      - "/sw/lib64/"
+      - "/sw/lib/"
+      - "/sw/Debug/"
+      - "/sw/"
+      - "/opt/local/lib64/"
+      - "/opt/local/lib/"
+      - "/opt/local/Debug/"
+      - "/opt/local/"
+      - "/opt/csw/lib64/"
+      - "/opt/csw/lib/"
+      - "/opt/csw/Debug/"
+      - "/opt/csw/"
+      - "/opt/lib64/"
+      - "/opt/lib/"
+      - "/opt/Debug/"
+      - "/opt/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/bin/lib64/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/bin/lib/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/bin/Debug/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/bin/"
+      - "/home/simulations/tools/java/jdk-22.0.2/bin/lib64/"
+      - "/home/simulations/tools/java/jdk-22.0.2/bin/lib/"
+      - "/home/simulations/tools/java/jdk-22.0.2/bin/Debug/"
+      - "/home/simulations/tools/java/jdk-22.0.2/bin/"
+      - "/home/didomenico/local/go/bin/lib64/"
+      - "/home/didomenico/local/go/bin/lib/"
+      - "/home/didomenico/local/go/bin/Debug/"
+      - "/home/didomenico/local/go/bin/"
+      - "/home/didomenico/.local/bin/lib64/"
+      - "/home/didomenico/.local/bin/lib/"
+      - "/home/didomenico/.local/bin/Debug/"
+      - "/home/didomenico/.local/bin/"
+      - "/home/didomenico/.nvm/versions/node/v25.0.0/bin/lib64/"
+      - "/home/didomenico/.nvm/versions/node/v25.0.0/bin/lib/"
+      - "/home/didomenico/.nvm/versions/node/v25.0.0/bin/Debug/"
+      - "/home/didomenico/.nvm/versions/node/v25.0.0/bin/"
+      - "/usr/local/sbin/lib64/"
+      - "/usr/local/sbin/lib/"
+      - "/usr/local/sbin/Debug/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/lib64/"
+      - "/usr/local/bin/lib/"
+      - "/usr/local/bin/Debug/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/lib64/"
+      - "/usr/sbin/lib/"
+      - "/usr/sbin/Debug/"
+      - "/usr/sbin/"
+      - "/usr/bin/lib64/"
+      - "/usr/bin/lib/"
+      - "/usr/bin/Debug/"
+      - "/usr/bin/"
+      - "/sbin/lib64/"
+      - "/sbin/lib/"
+      - "/sbin/Debug/"
+      - "/sbin/"
+      - "/bin/lib64/"
+      - "/bin/lib/"
+      - "/bin/Debug/"
+      - "/bin/"
+      - "/usr/games/lib64/"
+      - "/usr/games/lib/"
+      - "/usr/games/Debug/"
+      - "/usr/games/"
+      - "/usr/local/games/lib64/"
+      - "/usr/local/games/lib/"
+      - "/usr/local/games/Debug/"
+      - "/usr/local/games/"
+      - "/snap/bin/lib64/"
+      - "/snap/bin/lib/"
+      - "/snap/bin/Debug/"
+      - "/snap/bin/"
+      - "/usr/local/lib/x86_64-linux-gnu/lib64/"
+      - "/usr/local/lib/x86_64-linux-gnu/lib/"
+      - "/usr/local/lib/x86_64-linux-gnu/Debug/"
+      - "/usr/local/lib/x86_64-linux-gnu/"
+      - "/usr/local/lib/lib64/"
+      - "/usr/local/lib/lib/"
+      - "/usr/local/lib/Debug/"
+      - "/usr/local/lib/"
+      - "/usr/local/lib64/"
+      - "/usr/local/lib/"
+      - "/usr/local/Debug/"
+      - "/usr/local/"
+      - "/usr/lib/x86_64-linux-gnu/lib64/"
+      - "/usr/lib/x86_64-linux-gnu/lib/"
+      - "/usr/lib/x86_64-linux-gnu/Debug/"
+      - "/usr/lib/x86_64-linux-gnu/"
+      - "/usr/lib/lib64/"
+      - "/usr/lib/lib/"
+      - "/usr/lib/Debug/"
+      - "/usr/lib/"
+      - "/usr/lib64/"
+      - "/usr/lib/"
+      - "/usr/Debug/"
+      - "/usr/"
+      - "/lib/x86_64-linux-gnu/lib64/"
+      - "/lib/x86_64-linux-gnu/lib/"
+      - "/lib/x86_64-linux-gnu/Debug/"
+      - "/lib/x86_64-linux-gnu/"
+      - "/lib/lib64/"
+      - "/lib/lib/"
+      - "/lib/Debug/"
+      - "/lib/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/lib/x86_64-linux-gnu/lib64/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/lib/x86_64-linux-gnu/lib/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/lib/x86_64-linux-gnu/Debug/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/lib/x86_64-linux-gnu/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/lib/lib64/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/lib/lib/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/lib/Debug/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/lib/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/lib64/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/lib/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/Debug/"
+      - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/"
+      - "/usr/X11R6/lib/x86_64-linux-gnu/lib64/"
+      - "/usr/X11R6/lib/x86_64-linux-gnu/lib/"
+      - "/usr/X11R6/lib/x86_64-linux-gnu/Debug/"
+      - "/usr/X11R6/lib/x86_64-linux-gnu/"
+      - "/usr/X11R6/lib/lib64/"
+      - "/usr/X11R6/lib/lib/"
+      - "/usr/X11R6/lib/Debug/"
+      - "/usr/X11R6/lib/"
+      - "/usr/X11R6/lib64/"
+      - "/usr/X11R6/lib/"
+      - "/usr/X11R6/Debug/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/lib/x86_64-linux-gnu/lib64/"
+      - "/usr/pkg/lib/x86_64-linux-gnu/lib/"
+      - "/usr/pkg/lib/x86_64-linux-gnu/Debug/"
+      - "/usr/pkg/lib/x86_64-linux-gnu/"
+      - "/usr/pkg/lib/lib64/"
+      - "/usr/pkg/lib/lib/"
+      - "/usr/pkg/lib/Debug/"
+      - "/usr/pkg/lib/"
+      - "/usr/pkg/lib64/"
+      - "/usr/pkg/lib/"
+      - "/usr/pkg/Debug/"
+      - "/usr/pkg/"
+      - "/opt/lib/x86_64-linux-gnu/lib64/"
+      - "/opt/lib/x86_64-linux-gnu/lib/"
+      - "/opt/lib/x86_64-linux-gnu/Debug/"
+      - "/opt/lib/x86_64-linux-gnu/"
+      - "/opt/lib/lib64/"
+      - "/opt/lib/lib/"
+      - "/opt/lib/Debug/"
+      - "/opt/lib/"
+      - "/opt/lib64/"
+      - "/opt/lib/"
+      - "/opt/Debug/"
+      - "/opt/"
+      - "/usr/lib/X11/lib64/"
+      - "/usr/lib/X11/lib/"
+      - "/usr/lib/X11/Debug/"
+      - "/usr/lib/X11/"
+      - "/home/didomenico/fertjs/dependencies/yaml-cpp-0.5.1/lib64/"
+      - "/home/didomenico/fertjs/dependencies/yaml-cpp-0.5.1/lib/"
+      - "/home/didomenico/fertjs/dependencies/yaml-cpp-0.5.1/Debug/"
+      - "/home/didomenico/fertjs/dependencies/yaml-cpp-0.5.1/"
+      - "/home/didomenico/fertjs/dependencies/yaml-cpp-0.5.1/build/lib64/"
+      - "/home/didomenico/fertjs/dependencies/yaml-cpp-0.5.1/build/lib/"
+      - "/home/didomenico/fertjs/dependencies/yaml-cpp-0.5.1/build/Debug/"
+      - "/home/didomenico/fertjs/dependencies/yaml-cpp-0.5.1/build/"
+      - "/home/didomenico/Library/Frameworks/lib64/"
+      - "/home/didomenico/Library/Frameworks/lib/"
+      - "/home/didomenico/Library/Frameworks/Debug/"
+      - "/home/didomenico/Library/Frameworks/"
+      - "/Library/Frameworks/lib64/"
+      - "/Library/Frameworks/lib/"
+      - "/Library/Frameworks/Debug/"
+      - "/Library/Frameworks/"
+      - "/usr/local/lib64/"
+      - "/usr/local/lib/"
+      - "/usr/local/Debug/"
+      - "/usr/local/"
+      - "/usr/lib64/"
+      - "/usr/lib/"
+      - "/usr/Debug/"
+      - "/usr/"
+      - "/sw/lib64/"
+      - "/sw/lib/"
+      - "/sw/Debug/"
+      - "/sw/"
+      - "/opt/local/lib64/"
+      - "/opt/local/lib/"
+      - "/opt/local/Debug/"
+      - "/opt/local/"
+      - "/opt/csw/lib64/"
+      - "/opt/csw/lib/"
+      - "/opt/csw/Debug/"
+      - "/opt/csw/"
+      - "/opt/lib64/"
+      - "/opt/lib/"
+      - "/opt/Debug/"
+      - "/opt/"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64/bin"
+        - "/home/simulations/tools/java/jdk-22.0.2/bin"
+        - "/home/didomenico/local/go/bin"
+        - "/home/didomenico/.local/bin"
+        - "/home/simulations/tools/java/jdk-22.0.2/bin"
+        - "/home/didomenico/local/go/bin"
+        - "/home/didomenico/.nvm/versions/node/v25.0.0/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/home/didomenico/cmake-4.2.0/cmake-4.2.0-rc1-linux-x86_64"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+...
